@@ -38,7 +38,7 @@
        <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tuitu_page_none">
        <widget class="QTabWidget" name="tabWidget">
@@ -162,7 +162,7 @@
             <x>0</x>
             <y>0</y>
             <width>260</width>
-            <height>310</height>
+            <height>458</height>
            </rect>
           </property>
           <property name="font">
@@ -1118,7 +1118,7 @@
             <x>650</x>
             <y>0</y>
             <width>121</width>
-            <height>420</height>
+            <height>480</height>
            </rect>
           </property>
           <property name="font">
@@ -1637,7 +1637,7 @@
             <x>0</x>
             <y>342</y>
             <width>261</width>
-            <height>70</height>
+            <height>81</height>
            </rect>
           </property>
           <property name="font">
@@ -1916,8 +1916,8 @@
            <rect>
             <x>0</x>
             <y>250</y>
-            <width>251</width>
-            <height>30</height>
+            <width>261</width>
+            <height>35</height>
            </rect>
           </property>
           <property name="font">
@@ -2146,13 +2146,13 @@
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="">
+         <widget class="QWidget" name="layoutWidget">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>0</y>
             <width>254</width>
-            <height>252</height>
+            <height>332</height>
            </rect>
           </property>
           <layout class="QFormLayout" name="formLayout_26">
@@ -2578,7 +2578,7 @@
             <x>10</x>
             <y>90</y>
             <width>231</width>
-            <height>202</height>
+            <height>226</height>
            </rect>
           </property>
           <layout class="QFormLayout" name="formLayout_28">
@@ -3194,7 +3194,7 @@
             <x>10</x>
             <y>90</y>
             <width>231</width>
-            <height>202</height>
+            <height>226</height>
            </rect>
           </property>
           <layout class="QFormLayout" name="formLayout_32">

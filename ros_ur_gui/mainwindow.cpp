@@ -35,17 +35,16 @@ MainWindow::MainWindow(QWidget *parent) :
     //    setMaximumSize(800, 600);
     this->startTimer(0);
     ui->setupUi(this);
-    connect(ui->select_car,SIGNAL(currentIndexChanged(const QString &)), this, SLOT(on_sel_car(const QString &)));
     //默认无人推土机
     ui->show_txt1->setText("直线前进后退、u型弯，圆这三种演示路径");
     ui->radioButton->setChecked(1);//默认显示障碍物扇形
     //获取程序当前运行目录
-    qDebug()<<"当前路径"<<QDir::currentPath();
+//    qDebug()<<"当前路径"<<QDir::currentPath();
     update_time = new QTimer();
     connect(update_time,SIGNAL(timeout()),this,SLOT(time_update()));
     update_time->start(1000); //1秒钟后启动
     //初始化界面上显示logo,图片------------------------
-    QString car_pic_path=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/car.png")).fileName();//path+"data/img/car.png";//
+//    QString car_pic_path=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/car.png")).fileName();//path+"data/img/car.png";//
     QString car_pic_path_tuitu=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/tuitu.jpg")).fileName();//path+"data/img/tuitu.jpg";//
     QString car_pic_path_pingdi=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/pingdi.jpg")).fileName();//path+"data/img/pingdi.jpg";//
     QString car_pic_path_yalu=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/yalu.jpg")).fileName();//path + "data/img/yalu.jpg";//
@@ -55,7 +54,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QString logo_pic_shantui=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/shantui.jpg")).fileName();//path +  "data/img/shantui.jpg";//
     QString logo_pic_hust= QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/hust.jpg")).fileName();//path + "data/img/hust.jpg";//
     QString logo_pic_weichai=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/weichai.jpg")).fileName();//path + "data/img/weichai.jpg";//
-    QImage img_car(car_pic_path);//显示无人推土机图片
+//    QImage img_car(car_pic_path);//显示无人推土机图片
     QImage img_car_tuitu(car_pic_path_tuitu);//有人推土机
     QImage img_car_pingdi(car_pic_path_pingdi);//平地机
     QImage img_car_yalu(car_pic_path_yalu);//压路
@@ -249,20 +248,20 @@ void MainWindow::on_radioButton_clicked()
     flag_show_obstacle=!flag_show_obstacle;
 }
 
-void MainWindow::on_sel_baud_rate(const QString &text)//选择波特率
+void MainWindow::on_select_baud_rate_currentIndexChanged(const QString &arg1)
 {
-    baud_rate = ui->select_baud_rate->currentData().toString().toInt();
+    baud_rate = arg1.toInt();
 }
-void MainWindow::on_sel_car(const QString &text)//下拉框选择机械类型
+
+void MainWindow::on_select_car_currentIndexChanged(int index)//下拉框选择机械类型
 {
-    if(text=="无人推土机")
+    carKind = index;
+    if(carKind == 0)//"无人推土机")
     {
-        carKind=1;
         ui->show_txt1->setText("直线前进后退、u型弯，圆这三种演示路径");
     }
-    else if(text=="有人推土机")
+    else if(carKind == 1)//"有人推土机")
     {
-        carKind=2;
         ui->show_txt_tuitu->setText("日期：2020年6月1日\n"
                                     "施工设计高程：30cm；\n"
                                     "填方量估算：0.28万方；\n"
@@ -270,9 +269,8 @@ void MainWindow::on_sel_car(const QString &text)//下拉框选择机械类型
                                     "平整高程：30cm；\n"
                                     "推15纵，前进方向平行于施工段道路纵向，前进速度2-3km/h.");
     }
-    else if(text=="有人平地机")
+    else if(carKind == 2)//"有人平地机")
     {
-        carKind=3;
         ui->show_txt_pingdi->setText("日期：2020年6月1日\n"
                                      "拟完成土层高度：30cm；\n"
                                      "起始桩号：\n"
@@ -282,16 +280,14 @@ void MainWindow::on_sel_car(const QString &text)//下拉框选择机械类型
                                      "平地机直线前进方向与推土机保持一致，完成平整作业；\n"
                                      "刮土板以较小的入土深度和最大切削宽度状态工作.");
     }
-    else if(text=="有人压路机")
+    else if(carKind == 3)//"有人压路机")
     {
-        carKind=4;
         ui->show_txt_yalu->setText("日期：2020年6月1日\n"
                                    "拟完成土层高度：根据土壤情况，压实即可，压实度90%；\n"
                                    "起始桩号：K0+000～K0+100（作业范围：25m×100m）；\n"
                                    "碾压工艺：低速静压1遍（速度1.2Km/h）；中速振压3遍（速度2.1Km/h-2.6Km/h）；中速静压1遍（速度2.5Km/h-3.5Km/h）；\n"
                                    "错轮宽度：对振动压路机不小于压实轮的1/3.");
     }
-    //        qDebug()<<carKind;
 }
 
 void MainWindow::on_pbt_initial_ack_clicked()//初始化界面确认按钮
@@ -301,38 +297,30 @@ void MainWindow::on_pbt_initial_ack_clicked()//初始化界面确认按钮
     ui->tabWidget_yalu->setCurrentIndex(0);//显示施工轨迹界面
     ui->tabWidget_pingdi->setCurrentIndex(0);//显示施工轨迹界面
 
-    if(carKind==1)//无人 推土
+    if(carKind == 0)//无人 推土
     {
         ui->stackedWidget->setCurrentIndex(0);
     }
-    else if(carKind==2)//有人推土
+    else if(carKind == 1)//有人推土
     {
         ui->stackedWidget->setCurrentIndex(1);
     }
-    else if(carKind==3)//有人平地机
+    else if(carKind == 2)//有人平地机
     {
         ui->stackedWidget->setCurrentIndex(2);
     }
-    else if(carKind==4)//有人压路机
+    else if(carKind == 3)//有人压路机
     {
         ui->stackedWidget->setCurrentIndex(3);
     }
 
-    qDebug()<<"last carKind : "<<car_kind_cpy<<endl;
-    qDebug()<<"now carKind :"<<carKind<<endl;
-    qDebug()<<"last baud_rate :"<<baud_rate_cpy<<endl;
-    qDebug()<<"now baud_rate :"<<baud_rate<<endl;
-
     //判断参数配置选择是否发生改变
     if(car_kind_cpy != carKind || baud_rate_cpy != baud_rate){
         selpara_change_flag = true;//参数配置发生改变
-
-
-        qDebug()<<"changed!!!!!  flag = "<<selpara_change_flag<<endl;
         configure_machine_param(carKind, baud_rate);
-
         car_kind_cpy = carKind;
         baud_rate_cpy = baud_rate;
+        selpara_change_flag = false;//恢复状态
     }
 
 }
@@ -412,3 +400,7 @@ void MainWindow::on_btn_workdata_yalu_clicked()//压路机施工作业数据
     work_data_yalu->setModal(true);
     work_data_yalu->show();
 }
+
+
+
+

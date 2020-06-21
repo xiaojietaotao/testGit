@@ -48,10 +48,6 @@ private slots:
 
     void on_radioButton_clicked();
 
-    void on_sel_car(const QString &text);//选择机械类型
-
-    void on_sel_baud_rate(const QString &text);//选择波特率
-
     void on_pbt_initial_ack_clicked();
 
     void on_pbt_back_tuitu_none_clicked();
@@ -75,7 +71,9 @@ private slots:
 
     void on_btn_workdata_yalu_clicked();
 
+    void on_select_baud_rate_currentIndexChanged(const QString &arg1);//波特率选择
 
+    void on_select_car_currentIndexChanged(int index);
 
 protected:
     void timerEvent(QTimerEvent *event);

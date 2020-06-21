@@ -11,7 +11,7 @@ int center_y=label_y+50;
 
 MyQLabel::MyQLabel(QWidget *parent, Qt::WindowFlags f): QLabel(parent, f)
 {
-    qDebug()<<center_x<<"  "<<center_y;
+//    qDebug()<<center_x<<"  "<<center_y;
     x = -10;
     m_count = 0;
     m_Timer = new QTimer(this);

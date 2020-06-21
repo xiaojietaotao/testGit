@@ -196,7 +196,7 @@ public:
     QVBoxLayout *verticalLayout_6;
     QPushButton *btn_canmore_tuitu;
     QPushButton *btn_workdata_tuitu;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QFormLayout *formLayout_26;
     QLabel *label_633;
     QLineEdit *mbd_engine_intake_manifold_tem;
@@ -405,7 +405,7 @@ public:
 
         gridLayoutWidget_3 = new QWidget(tab);
         gridLayoutWidget_3->setObjectName(QStringLiteral("gridLayoutWidget_3"));
-        gridLayoutWidget_3->setGeometry(QRect(0, 0, 260, 310));
+        gridLayoutWidget_3->setGeometry(QRect(0, 0, 260, 458));
         gridLayoutWidget_3->setFont(font);
         gridLayout_4 = new QGridLayout(gridLayoutWidget_3);
         gridLayout_4->setSpacing(6);
@@ -850,7 +850,7 @@ public:
         tabWidget_2->addTab(tab_8, QString());
         gridLayoutWidget = new QWidget(tab);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(650, 0, 121, 420));
+        gridLayoutWidget->setGeometry(QRect(650, 0, 121, 480));
         gridLayoutWidget->setFont(font);
         gridLayout_2 = new QGridLayout(gridLayoutWidget);
         gridLayout_2->setSpacing(6);
@@ -1102,7 +1102,7 @@ public:
         le_car_num_6->setStyleSheet(QStringLiteral("background-color: rgb(37, 162, 242);"));
         layoutWidget2 = new QWidget(tab);
         layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
-        layoutWidget2->setGeometry(QRect(0, 342, 261, 70));
+        layoutWidget2->setGeometry(QRect(0, 342, 261, 81));
         layoutWidget2->setFont(font);
         horizontalLayout_7 = new QHBoxLayout(layoutWidget2);
         horizontalLayout_7->setSpacing(6);
@@ -1209,7 +1209,7 @@ public:
         tabWidget_tuitu->addTab(tab_10, QString());
         layoutWidget_2 = new QWidget(tab_4);
         layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(0, 250, 251, 30));
+        layoutWidget_2->setGeometry(QRect(0, 250, 261, 35));
         layoutWidget_2->setFont(font);
         horizontalLayout_252 = new QHBoxLayout(layoutWidget_2);
         horizontalLayout_252->setSpacing(6);
@@ -1319,149 +1319,149 @@ public:
 
         horizontalLayout_6->addLayout(verticalLayout_6);
 
-        widget = new QWidget(tab_4);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(0, 0, 254, 252));
-        formLayout_26 = new QFormLayout(widget);
+        layoutWidget = new QWidget(tab_4);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 254, 332));
+        formLayout_26 = new QFormLayout(layoutWidget);
         formLayout_26->setSpacing(6);
         formLayout_26->setContentsMargins(11, 11, 11, 11);
         formLayout_26->setObjectName(QStringLiteral("formLayout_26"));
         formLayout_26->setVerticalSpacing(0);
         formLayout_26->setContentsMargins(0, 0, 0, 0);
-        label_633 = new QLabel(widget);
+        label_633 = new QLabel(layoutWidget);
         label_633->setObjectName(QStringLiteral("label_633"));
         label_633->setFont(font3);
         label_633->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(0, QFormLayout::LabelRole, label_633);
 
-        mbd_engine_intake_manifold_tem = new QLineEdit(widget);
+        mbd_engine_intake_manifold_tem = new QLineEdit(layoutWidget);
         mbd_engine_intake_manifold_tem->setObjectName(QStringLiteral("mbd_engine_intake_manifold_tem"));
         mbd_engine_intake_manifold_tem->setFont(font3);
         mbd_engine_intake_manifold_tem->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(0, QFormLayout::FieldRole, mbd_engine_intake_manifold_tem);
 
-        label_634 = new QLabel(widget);
+        label_634 = new QLabel(layoutWidget);
         label_634->setObjectName(QStringLiteral("label_634"));
         label_634->setFont(font3);
         label_634->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(1, QFormLayout::LabelRole, label_634);
 
-        mbd_engine_working_time = new QLineEdit(widget);
+        mbd_engine_working_time = new QLineEdit(layoutWidget);
         mbd_engine_working_time->setObjectName(QStringLiteral("mbd_engine_working_time"));
         mbd_engine_working_time->setFont(font3);
         mbd_engine_working_time->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(1, QFormLayout::FieldRole, mbd_engine_working_time);
 
-        label_635 = new QLabel(widget);
+        label_635 = new QLabel(layoutWidget);
         label_635->setObjectName(QStringLiteral("label_635"));
         label_635->setFont(font3);
         label_635->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(2, QFormLayout::LabelRole, label_635);
 
-        mbd_engine_speed = new QLineEdit(widget);
+        mbd_engine_speed = new QLineEdit(layoutWidget);
         mbd_engine_speed->setObjectName(QStringLiteral("mbd_engine_speed"));
         mbd_engine_speed->setFont(font3);
         mbd_engine_speed->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(2, QFormLayout::FieldRole, mbd_engine_speed);
 
-        label_636 = new QLabel(widget);
+        label_636 = new QLabel(layoutWidget);
         label_636->setObjectName(QStringLiteral("label_636"));
         label_636->setFont(font3);
         label_636->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(3, QFormLayout::LabelRole, label_636);
 
-        mbd_engine_failure_code = new QLineEdit(widget);
+        mbd_engine_failure_code = new QLineEdit(layoutWidget);
         mbd_engine_failure_code->setObjectName(QStringLiteral("mbd_engine_failure_code"));
         mbd_engine_failure_code->setFont(font3);
         mbd_engine_failure_code->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(3, QFormLayout::FieldRole, mbd_engine_failure_code);
 
-        label_637 = new QLabel(widget);
+        label_637 = new QLabel(layoutWidget);
         label_637->setObjectName(QStringLiteral("label_637"));
         label_637->setFont(font3);
         label_637->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(4, QFormLayout::LabelRole, label_637);
 
-        mbd_system_voltage = new QLineEdit(widget);
+        mbd_system_voltage = new QLineEdit(layoutWidget);
         mbd_system_voltage->setObjectName(QStringLiteral("mbd_system_voltage"));
         mbd_system_voltage->setFont(font3);
         mbd_system_voltage->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(4, QFormLayout::FieldRole, mbd_system_voltage);
 
-        label_638 = new QLabel(widget);
+        label_638 = new QLabel(layoutWidget);
         label_638->setObjectName(QStringLiteral("label_638"));
         label_638->setFont(font3);
         label_638->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(5, QFormLayout::LabelRole, label_638);
 
-        mbd_engine_oil_pressure = new QLineEdit(widget);
+        mbd_engine_oil_pressure = new QLineEdit(layoutWidget);
         mbd_engine_oil_pressure->setObjectName(QStringLiteral("mbd_engine_oil_pressure"));
         mbd_engine_oil_pressure->setFont(font3);
         mbd_engine_oil_pressure->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(5, QFormLayout::FieldRole, mbd_engine_oil_pressure);
 
-        label_639 = new QLabel(widget);
+        label_639 = new QLabel(layoutWidget);
         label_639->setObjectName(QStringLiteral("label_639"));
         label_639->setFont(font3);
         label_639->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(6, QFormLayout::LabelRole, label_639);
 
-        mbd_engine_coolant_temperature = new QLineEdit(widget);
+        mbd_engine_coolant_temperature = new QLineEdit(layoutWidget);
         mbd_engine_coolant_temperature->setObjectName(QStringLiteral("mbd_engine_coolant_temperature"));
         mbd_engine_coolant_temperature->setFont(font3);
         mbd_engine_coolant_temperature->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(6, QFormLayout::FieldRole, mbd_engine_coolant_temperature);
 
-        label_640 = new QLabel(widget);
+        label_640 = new QLabel(layoutWidget);
         label_640->setObjectName(QStringLiteral("label_640"));
         label_640->setFont(font3);
         label_640->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(7, QFormLayout::LabelRole, label_640);
 
-        mbd_fuel_consumption = new QLineEdit(widget);
+        mbd_fuel_consumption = new QLineEdit(layoutWidget);
         mbd_fuel_consumption->setObjectName(QStringLiteral("mbd_fuel_consumption"));
         mbd_fuel_consumption->setFont(font3);
         mbd_fuel_consumption->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(7, QFormLayout::FieldRole, mbd_fuel_consumption);
 
-        label_641 = new QLabel(widget);
+        label_641 = new QLabel(layoutWidget);
         label_641->setObjectName(QStringLiteral("label_641"));
         label_641->setFont(font3);
         label_641->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(8, QFormLayout::LabelRole, label_641);
 
-        mbd_fuel_consumption_2 = new QLineEdit(widget);
+        mbd_fuel_consumption_2 = new QLineEdit(layoutWidget);
         mbd_fuel_consumption_2->setObjectName(QStringLiteral("mbd_fuel_consumption_2"));
         mbd_fuel_consumption_2->setFont(font3);
         mbd_fuel_consumption_2->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(8, QFormLayout::FieldRole, mbd_fuel_consumption_2);
 
-        label_642 = new QLabel(widget);
+        label_642 = new QLabel(layoutWidget);
         label_642->setObjectName(QStringLiteral("label_642"));
         label_642->setFont(font3);
         label_642->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(9, QFormLayout::LabelRole, label_642);
 
-        mbd_fuel_consumption_3 = new QLineEdit(widget);
+        mbd_fuel_consumption_3 = new QLineEdit(layoutWidget);
         mbd_fuel_consumption_3->setObjectName(QStringLiteral("mbd_fuel_consumption_3"));
         mbd_fuel_consumption_3->setFont(font3);
         mbd_fuel_consumption_3->setAlignment(Qt::AlignCenter);
@@ -1508,7 +1508,7 @@ public:
         tabWidget_pingdi->addTab(tab_13, QString());
         layoutWidget4 = new QWidget(tab_11);
         layoutWidget4->setObjectName(QStringLiteral("layoutWidget4"));
-        layoutWidget4->setGeometry(QRect(10, 90, 231, 202));
+        layoutWidget4->setGeometry(QRect(10, 90, 231, 226));
         formLayout_28 = new QFormLayout(layoutWidget4);
         formLayout_28->setSpacing(6);
         formLayout_28->setContentsMargins(11, 11, 11, 11);
@@ -1759,7 +1759,7 @@ public:
         tabWidget_yalu->addTab(tab_18, QString());
         layoutWidget_4 = new QWidget(tab_16);
         layoutWidget_4->setObjectName(QStringLiteral("layoutWidget_4"));
-        layoutWidget_4->setGeometry(QRect(10, 90, 231, 202));
+        layoutWidget_4->setGeometry(QRect(10, 90, 231, 226));
         formLayout_32 = new QFormLayout(layoutWidget_4);
         formLayout_32->setSpacing(6);
         formLayout_32->setContentsMargins(11, 11, 11, 11);
@@ -2032,7 +2032,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(4);
+        stackedWidget->setCurrentIndex(3);
         tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(1);
         tabWidget_3->setCurrentIndex(0);
