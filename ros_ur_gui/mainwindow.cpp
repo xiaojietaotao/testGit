@@ -251,12 +251,7 @@ void MainWindow::on_radioButton_clicked()
 
 void MainWindow::on_sel_baud_rate(const QString &text)//选择波特率
 {
-    if(text == "250"){
-        baud_rate =  250;
-    }
-    if(text == "500"){
-        baud_rate = 500;
-    }
+    baud_rate = ui->select_baud_rate->currentData().toString().toInt();
 }
 void MainWindow::on_sel_car(const QString &text)//下拉框选择机械类型
 {
