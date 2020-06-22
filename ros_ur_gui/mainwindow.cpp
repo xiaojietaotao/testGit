@@ -317,7 +317,6 @@ void MainWindow::on_pbt_initial_ack_clicked()//初始化界面确认按钮
     //判断参数配置选择是否发生改变
     if(car_kind_cpy != carKind || baud_rate_cpy != baud_rate){
         selpara_change_flag = true;//参数配置发生改变
-        configure_machine_param(carKind, baud_rate);
         car_kind_cpy = carKind;
         baud_rate_cpy = baud_rate;
         selpara_change_flag = false;//恢复状态
@@ -402,5 +401,7 @@ void MainWindow::on_btn_workdata_yalu_clicked()//压路机施工作业数据
 }
 
 
-
-
+void MainWindow::on_pushButton_clicked()
+{
+    machine_if_close();
+}

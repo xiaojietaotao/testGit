@@ -10,8 +10,9 @@ extern "C"
 
 int main(int argc, char *argv[])
 {
-//    Mythead mythread;
-//    mythread.start();
+    Mythead mythread;
+    machine_if_init();
+    mythread.start();
 
     QApplication a(argc, argv);
     MainWindow w;

@@ -321,6 +321,7 @@ public:
     QLabel *lb_car_wajue;
     QComboBox *select_baud_rate;
     QLabel *label_653;
+    QPushButton *pushButton;
     QToolBar *mainToolBar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -2005,6 +2006,9 @@ public:
         label_653->setGeometry(QRect(270, 80, 91, 20));
         label_653->setFont(font7);
         label_653->setAlignment(Qt::AlignCenter);
+        pushButton = new QPushButton(initial_page);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(250, 260, 80, 29));
         stackedWidget->addWidget(initial_page);
         pbt_scraper_more->raise();
         pBtn_delete_edge_15->raise();
@@ -2022,6 +2026,7 @@ public:
         lb_car_pingdi->raise();
         select_baud_rate->raise();
         label_653->raise();
+        pushButton->raise();
 
         gridLayout->addWidget(stackedWidget, 0, 0, 1, 1);
 
@@ -2032,7 +2037,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(3);
+        stackedWidget->setCurrentIndex(4);
         tabWidget->setCurrentIndex(0);
         tabWidget_2->setCurrentIndex(1);
         tabWidget_3->setCurrentIndex(0);
@@ -2250,7 +2255,7 @@ public:
          << QApplication::translate("MainWindow", "\346\234\211\344\272\272\345\216\213\350\267\257\346\234\272", 0)
         );
         lbl_vertex_number_43->setText(QApplication::translate("MainWindow", "\346\231\272\350\203\275\346\226\275\345\267\245\346\234\272\346\242\260\346\227\240\344\272\272\351\251\276\351\251\266\347\263\273\347\273\237", 0));
-        pbt_initial_ack->setText(QApplication::translate("MainWindow", "\347\241\256\345\256\232", 0));
+        pbt_initial_ack->setText(QApplication::translate("MainWindow", "hh", 0));
         lbl_vertex_number_47->setText(QApplication::translate("MainWindow", " \346\226\275\345\267\245\346\234\272\346\242\260\347\261\273\345\236\213\357\274\232", 0));
         lb_car_putan->setText(QString());
         lb_car_tuitu->setText(QString());
@@ -2266,6 +2271,7 @@ public:
          << QApplication::translate("MainWindow", "500", 0)
         );
         label_653->setText(QApplication::translate("MainWindow", "\346\263\242\347\211\271\347\216\207(kbps):", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "\346\265\213\350\257\225", 0));
     } // retranslateUi
 
 };

@@ -44,6 +44,12 @@ extern mrl_fuel_consumption    mrl_msg_fuel_consumption;
 
 //有人/无人运行数值
 extern Mechanicals machine;
-int data_rec_setup(void);
-void configure_machine_param(int type, int baudrate);
+
+void machine_if_init(void);
+void machine_if_launch(int type, int baudrate);
+void machine_if_close(void);
+
+int get_machine_if_sta(void);
+int get_http_run_sta(void);
+int get_can_run_sta(void);
 #endif

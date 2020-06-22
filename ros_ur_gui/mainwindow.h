@@ -75,6 +75,9 @@ private slots:
 
     void on_select_car_currentIndexChanged(int index);
 
+
+    void on_pushButton_clicked();
+
 protected:
     void timerEvent(QTimerEvent *event);
 private:

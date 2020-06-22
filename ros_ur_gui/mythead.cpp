@@ -1,4 +1,6 @@
 #include "mythead.h"
+#include"common.h"
+
 extern "C"
 {
     #include "setup.h"
@@ -16,11 +18,12 @@ void Mythead::closeThread()
 
 void Mythead::run()
 {
-    data_rec_setup();
+    machine_if_launch(carKind, baud_rate);
     while(1)
     {
-        if (this->isStop)
+        if (!get_machine_if_sta())
         {
+            qDebug("mythread close\n");
             return;
         }
     }

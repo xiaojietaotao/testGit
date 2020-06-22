@@ -35,6 +35,10 @@ typedef struct
 	int machine_type;
 	int can_bitrate;
 	char can_device[10];
+	int can_switch_status;
+	int http_switch_status;
+	int can_is_open;
+	int http_is_open;
 	pfunc_can_init can_init;
 	pfunc_can_reader can_reader;
 
