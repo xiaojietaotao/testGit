@@ -635,6 +635,7 @@ moc_mainwindow.cpp: ../ros_ur_gui/dialog_3dlaser_para_set.h \
 		../ros_ur_gui/workdata_yalu.h \
 		../ros_ur_gui/MyQLabel.h \
 		../ros_ur_gui/common.h \
+		../ros_ur_gui/mythead.h \
 		../ros_ur_gui/mainwindow.h
 	/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/i686-pokysdk-linux/usr/bin/qt5/moc $(DEFINES) -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/qt5/mkspecs/linux-oe-g++ -I/home/chentao/qtcreator-2.6.1/bin/CT_ros_qt_dis0.1/CT_ros_qt_dis/testGit/ros_ur_gui -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/qt5 -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/qt5/QtWidgets -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/qt5/QtGui -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/qt5/QtCore -I. -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/c++/5.3.0 -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/c++/5.3.0/arm-poky-linux-gnueabi -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include/c++/5.3.0/backward -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/i686-pokysdk-linux/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/5.3.0/include -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/lib/gcc/arm-poky-linux-gnueabi/5.3.0/include -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/i686-pokysdk-linux/lib/arm-poky-linux-gnueabi/gcc/arm-poky-linux-gnueabi/5.3.0/include-fixed -I/opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux-gnueabi/usr/include ../ros_ur_gui/mainwindow.h -o moc_mainwindow.cpp
 
@@ -712,7 +713,8 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 ####### Compile
 
 MyQLabel.o: ../ros_ur_gui/MyQLabel.cpp ../ros_ur_gui/MyQLabel.h \
-		../ros_ur_gui/common.h
+		../ros_ur_gui/common.h \
+		../ros_ur_gui/mythead.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o MyQLabel.o ../ros_ur_gui/MyQLabel.cpp
 
 canmore_pingdi.o: ../ros_ur_gui/canmore_pingdi.cpp ../ros_ur_gui/canmore_pingdi.h \
@@ -727,7 +729,8 @@ canmore_yalu.o: ../ros_ur_gui/canmore_yalu.cpp ../ros_ur_gui/canmore_yalu.h \
 		../ros_ur_gui/ui_canmore_yalu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o canmore_yalu.o ../ros_ur_gui/canmore_yalu.cpp
 
-common.o: ../ros_ur_gui/common.cpp ../ros_ur_gui/common.h
+common.o: ../ros_ur_gui/common.cpp ../ros_ur_gui/common.h \
+		../ros_ur_gui/mythead.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o common.o ../ros_ur_gui/common.cpp
 
 dialog_3dlaser_para_set.o: ../ros_ur_gui/dialog_3dlaser_para_set.cpp ../ros_ur_gui/dialog_3dlaser_para_set.h \
@@ -791,6 +794,7 @@ mainwindow.o: ../ros_ur_gui/mainwindow.cpp ../ros_ur_gui/mainwindow.h \
 		../ros_ur_gui/workdata_yalu.h \
 		../ros_ur_gui/MyQLabel.h \
 		../ros_ur_gui/common.h \
+		../ros_ur_gui/mythead.h \
 		../ros_ur_gui/ui_mainwindow.h \
 		../ros_ur_gui/setup.h \
 		../ros_ur_gui/unmannedbulldozer_can.h \
@@ -821,6 +825,7 @@ workset.o: ../ros_ur_gui/workset.cpp ../ros_ur_gui/workset.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o workset.o ../ros_ur_gui/workset.cpp
 
 mythead.o: ../ros_ur_gui/mythead.cpp ../ros_ur_gui/mythead.h \
+		../ros_ur_gui/common.h \
 		../ros_ur_gui/setup.h \
 		../ros_ur_gui/unmannedbulldozer_can.h \
 		../ros_ur_gui/manned_bulldozer_can.h \

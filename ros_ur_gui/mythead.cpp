@@ -19,12 +19,4 @@ void Mythead::closeThread()
 void Mythead::run()
 {
     machine_if_launch(carKind, baud_rate);
-    while(1)
-    {
-        if (!get_machine_if_sta())
-        {
-            qDebug("mythread close\n");
-            return;
-        }
-    }
 }

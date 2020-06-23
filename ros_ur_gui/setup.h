@@ -52,4 +52,6 @@ void machine_if_close(void);
 int get_machine_if_sta(void);
 int get_http_run_sta(void);
 int get_can_run_sta(void);
+
+void test_msg_send(void);
 #endif

@@ -14,7 +14,7 @@ extern "C"
     #include "setup.h"
 }
 
-int car_kind_cpy = 1;//机械类型选择辅助变量，判断是否选择发生改变
+int car_kind_cpy = 0;//机械类型选择辅助变量，判断是否选择发生改变
 int baud_rate_cpy = 250;//波特率选择辅助变量，判断是否选择发生改变
 
 
@@ -316,7 +316,12 @@ void MainWindow::on_pbt_initial_ack_clicked()//初始化界面确认按钮
 
     //判断参数配置选择是否发生改变
     if(car_kind_cpy != carKind || baud_rate_cpy != baud_rate){
+        qDebug() << "change!" << endl;
         selpara_change_flag = true;//参数配置发生改变
+
+        machine_if_close();
+        mythread.start();
+
         car_kind_cpy = carKind;
         baud_rate_cpy = baud_rate;
         selpara_change_flag = false;//恢复状态

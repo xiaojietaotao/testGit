@@ -10,7 +10,6 @@ extern "C"
 
 int main(int argc, char *argv[])
 {
-    Mythead mythread;
     machine_if_init();
     mythread.start();
 
