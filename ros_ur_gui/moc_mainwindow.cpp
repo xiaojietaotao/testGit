@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[25];
-    char stringdata0[582];
+    QByteArrayData data[26];
+    char stringdata0[634];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -42,21 +42,22 @@ QT_MOC_LITERAL(6, 110, 27), // "on_pbt_path_control_clicked"
 QT_MOC_LITERAL(7, 138, 22), // "on_btn_canmore_clicked"
 QT_MOC_LITERAL(8, 161, 27), // "on_pbt_scraper_more_clicked"
 QT_MOC_LITERAL(9, 189, 22), // "on_radioButton_clicked"
-QT_MOC_LITERAL(10, 212, 10), // "on_sel_car"
-QT_MOC_LITERAL(11, 223, 4), // "text"
-QT_MOC_LITERAL(12, 228, 16), // "on_sel_baud_rate"
-QT_MOC_LITERAL(13, 245, 26), // "on_pbt_initial_ack_clicked"
-QT_MOC_LITERAL(14, 272, 30), // "on_pbt_back_tuitu_none_clicked"
-QT_MOC_LITERAL(15, 303, 26), // "on_pbt_back_pingdi_clicked"
-QT_MOC_LITERAL(16, 330, 25), // "on_pbt_back_tuitu_clicked"
-QT_MOC_LITERAL(17, 356, 24), // "on_pbt_back_yalu_clicked"
-QT_MOC_LITERAL(18, 381, 28), // "on_btn_canmore_tuitu_clicked"
-QT_MOC_LITERAL(19, 410, 29), // "on_btn_canmore_pingdi_clicked"
-QT_MOC_LITERAL(20, 440, 27), // "on_btn_canmore_yalu_clicked"
-QT_MOC_LITERAL(21, 468, 23), // "on_btn_workmore_clicked"
-QT_MOC_LITERAL(22, 492, 29), // "on_btn_workdata_tuitu_clicked"
-QT_MOC_LITERAL(23, 522, 30), // "on_btn_workdata_pingdi_clicked"
-QT_MOC_LITERAL(24, 553, 28) // "on_btn_workdata_yalu_clicked"
+QT_MOC_LITERAL(10, 212, 26), // "on_pbt_initial_ack_clicked"
+QT_MOC_LITERAL(11, 239, 30), // "on_pbt_back_tuitu_none_clicked"
+QT_MOC_LITERAL(12, 270, 26), // "on_pbt_back_pingdi_clicked"
+QT_MOC_LITERAL(13, 297, 25), // "on_pbt_back_tuitu_clicked"
+QT_MOC_LITERAL(14, 323, 24), // "on_pbt_back_yalu_clicked"
+QT_MOC_LITERAL(15, 348, 28), // "on_btn_canmore_tuitu_clicked"
+QT_MOC_LITERAL(16, 377, 29), // "on_btn_canmore_pingdi_clicked"
+QT_MOC_LITERAL(17, 407, 27), // "on_btn_canmore_yalu_clicked"
+QT_MOC_LITERAL(18, 435, 23), // "on_btn_workmore_clicked"
+QT_MOC_LITERAL(19, 459, 29), // "on_btn_workdata_tuitu_clicked"
+QT_MOC_LITERAL(20, 489, 30), // "on_btn_workdata_pingdi_clicked"
+QT_MOC_LITERAL(21, 520, 28), // "on_btn_workdata_yalu_clicked"
+QT_MOC_LITERAL(22, 549, 39), // "on_select_baud_rate_currentIn..."
+QT_MOC_LITERAL(23, 589, 4), // "arg1"
+QT_MOC_LITERAL(24, 594, 33), // "on_select_car_currentIndexCha..."
+QT_MOC_LITERAL(25, 628, 5) // "index"
 
     },
     "MainWindow\0on_pbt_3Dlaser_clicked\0\0"
@@ -65,8 +66,8 @@ QT_MOC_LITERAL(24, 553, 28) // "on_btn_workdata_yalu_clicked"
     "time_update\0on_pbt_path_control_clicked\0"
     "on_btn_canmore_clicked\0"
     "on_pbt_scraper_more_clicked\0"
-    "on_radioButton_clicked\0on_sel_car\0"
-    "text\0on_sel_baud_rate\0on_pbt_initial_ack_clicked\0"
+    "on_radioButton_clicked\0"
+    "on_pbt_initial_ack_clicked\0"
     "on_pbt_back_tuitu_none_clicked\0"
     "on_pbt_back_pingdi_clicked\0"
     "on_pbt_back_tuitu_clicked\0"
@@ -77,7 +78,10 @@ QT_MOC_LITERAL(24, 553, 28) // "on_btn_workdata_yalu_clicked"
     "on_btn_workmore_clicked\0"
     "on_btn_workdata_tuitu_clicked\0"
     "on_btn_workdata_pingdi_clicked\0"
-    "on_btn_workdata_yalu_clicked"
+    "on_btn_workdata_yalu_clicked\0"
+    "on_select_baud_rate_currentIndexChanged\0"
+    "arg1\0on_select_car_currentIndexChanged\0"
+    "index"
 };
 #undef QT_MOC_LITERAL
 
@@ -103,20 +107,20 @@ static const uint qt_meta_data_MainWindow[] = {
        7,    0,  129,    2, 0x08 /* Private */,
        8,    0,  130,    2, 0x08 /* Private */,
        9,    0,  131,    2, 0x08 /* Private */,
-      10,    1,  132,    2, 0x08 /* Private */,
-      12,    1,  135,    2, 0x08 /* Private */,
-      13,    0,  138,    2, 0x08 /* Private */,
-      14,    0,  139,    2, 0x08 /* Private */,
-      15,    0,  140,    2, 0x08 /* Private */,
-      16,    0,  141,    2, 0x08 /* Private */,
-      17,    0,  142,    2, 0x08 /* Private */,
-      18,    0,  143,    2, 0x08 /* Private */,
-      19,    0,  144,    2, 0x08 /* Private */,
-      20,    0,  145,    2, 0x08 /* Private */,
-      21,    0,  146,    2, 0x08 /* Private */,
-      22,    0,  147,    2, 0x08 /* Private */,
-      23,    0,  148,    2, 0x08 /* Private */,
-      24,    0,  149,    2, 0x08 /* Private */,
+      10,    0,  132,    2, 0x08 /* Private */,
+      11,    0,  133,    2, 0x08 /* Private */,
+      12,    0,  134,    2, 0x08 /* Private */,
+      13,    0,  135,    2, 0x08 /* Private */,
+      14,    0,  136,    2, 0x08 /* Private */,
+      15,    0,  137,    2, 0x08 /* Private */,
+      16,    0,  138,    2, 0x08 /* Private */,
+      17,    0,  139,    2, 0x08 /* Private */,
+      18,    0,  140,    2, 0x08 /* Private */,
+      19,    0,  141,    2, 0x08 /* Private */,
+      20,    0,  142,    2, 0x08 /* Private */,
+      21,    0,  143,    2, 0x08 /* Private */,
+      22,    1,  144,    2, 0x08 /* Private */,
+      24,    1,  147,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -127,8 +131,6 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   11,
-    QMetaType::Void, QMetaType::QString,   11,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -141,6 +143,8 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   23,
+    QMetaType::Void, QMetaType::Int,   25,
 
        0        // eod
 };
@@ -159,20 +163,20 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 5: _t->on_btn_canmore_clicked(); break;
         case 6: _t->on_pbt_scraper_more_clicked(); break;
         case 7: _t->on_radioButton_clicked(); break;
-        case 8: _t->on_sel_car((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 9: _t->on_sel_baud_rate((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 10: _t->on_pbt_initial_ack_clicked(); break;
-        case 11: _t->on_pbt_back_tuitu_none_clicked(); break;
-        case 12: _t->on_pbt_back_pingdi_clicked(); break;
-        case 13: _t->on_pbt_back_tuitu_clicked(); break;
-        case 14: _t->on_pbt_back_yalu_clicked(); break;
-        case 15: _t->on_btn_canmore_tuitu_clicked(); break;
-        case 16: _t->on_btn_canmore_pingdi_clicked(); break;
-        case 17: _t->on_btn_canmore_yalu_clicked(); break;
-        case 18: _t->on_btn_workmore_clicked(); break;
-        case 19: _t->on_btn_workdata_tuitu_clicked(); break;
-        case 20: _t->on_btn_workdata_pingdi_clicked(); break;
-        case 21: _t->on_btn_workdata_yalu_clicked(); break;
+        case 8: _t->on_pbt_initial_ack_clicked(); break;
+        case 9: _t->on_pbt_back_tuitu_none_clicked(); break;
+        case 10: _t->on_pbt_back_pingdi_clicked(); break;
+        case 11: _t->on_pbt_back_tuitu_clicked(); break;
+        case 12: _t->on_pbt_back_yalu_clicked(); break;
+        case 13: _t->on_btn_canmore_tuitu_clicked(); break;
+        case 14: _t->on_btn_canmore_pingdi_clicked(); break;
+        case 15: _t->on_btn_canmore_yalu_clicked(); break;
+        case 16: _t->on_btn_workmore_clicked(); break;
+        case 17: _t->on_btn_workdata_tuitu_clicked(); break;
+        case 18: _t->on_btn_workdata_pingdi_clicked(); break;
+        case 19: _t->on_btn_workdata_yalu_clicked(); break;
+        case 20: _t->on_select_baud_rate_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 21: _t->on_select_car_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }

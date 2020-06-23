@@ -17,8 +17,8 @@ MyQLabel::MyQLabel(QWidget *parent, Qt::WindowFlags f): QLabel(parent, f)
     m_Timer = new QTimer(this);
     m_Timer->start(10);
     //connect(m_Timer,SIGNAL(timeout()),this,SLOT(creatData()));
-
-    QFile file(path + "/data/Rounte_line_P.txt");
+    QString file_path=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/Rounte_line_P.txt")).fileName();
+    QFile file(file_path);
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         qDebug()<<"Can't open the file!"<<endl;

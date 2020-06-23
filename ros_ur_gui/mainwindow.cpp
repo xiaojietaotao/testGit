@@ -22,6 +22,16 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    //为完成的功能暂时不给予显示
+    ui->btn_canmore->setVisible(false);
+    ui->btn_workmore->setVisible(false);
+    ui->btn_canmore_tuitu->setVisible(false);
+    ui->btn_workdata_tuitu->setVisible(false);
+    ui->btn_canmore_pingdi->setVisible(false);
+    ui->btn_workdata_pingdi->setVisible(false);
+    ui->btn_canmore_yalu->setVisible(false);
+    ui->btn_workdata_yalu->setVisible(false);
+
     //获取程序当前运行目录
     QString qstr = QDir::currentPath();
     std::string str = qstr.toStdString();
@@ -54,6 +64,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QString logo_pic_shantui=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/shantui.jpg")).fileName();//path +  "data/img/shantui.jpg";//
     QString logo_pic_hust= QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/hust.jpg")).fileName();//path + "data/img/hust.jpg";//
     QString logo_pic_weichai=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/weichai.jpg")).fileName();//path + "data/img/weichai.jpg";//
+
+    QString sample_pic_path=  QFile(directoryOf("ros_ur_gui").absoluteFilePath("data/img/sample.jpg")).fileName();
 //    QImage img_car(car_pic_path);//显示无人推土机图片
     QImage img_car_tuitu(car_pic_path_tuitu);//有人推土机
     QImage img_car_pingdi(car_pic_path_pingdi);//平地机
@@ -63,6 +75,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QImage img_logo_shantui(logo_pic_shantui);//山推
     QImage img_logo_hust(logo_pic_hust);//hust
     QImage img_logo_weichai(logo_pic_weichai);//潍柴
+    QImage img_sample(sample_pic_path);//施工场景环境感知示意
     QMatrix matrix;
     matrix.rotate(-90);
     //    QSize picSize(200,150);
@@ -82,6 +95,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lb_logo_shantui->setPixmap(QPixmap::fromImage(img_logo_shantui).scaled(ui->lb_logo_shantui->size(), Qt::KeepAspectRatio));
     ui->lb_logo_hust->setScaledContents(true);
     ui->lb_logo_hust->setPixmap(QPixmap::fromImage(img_logo_hust).scaled(ui->lb_logo_hust->size(), Qt::KeepAspectRatio));//*****************
+    ui->lb_surroundings->setScaledContents(true);
+    ui->lb_surroundings->setPixmap(QPixmap::fromImage(img_sample).scaled(ui->lb_surroundings->size(), Qt::KeepAspectRatio));
+
     //ui->lineEdit_179->setText(QString::number(mbd_msg_engine_working_time.engine_working_time, 10, 2));
     //初始化显示
     ui->stackedWidget->setCurrentIndex(4);//设备参数初始化界面
@@ -181,17 +197,13 @@ void MainWindow::time_update()
 
     ItemModel = new QStandardItemModel(this);
     QStringList strList;
-    strList.append(("A: 8.5m, 30")+angle_sign);
-    strList.append(("B: 8.5m, 30")+angle_sign);
-    strList.append(("C: 8.5m, 30")+angle_sign);
-    strList.append(("D: 8.5m, 30")+angle_sign);
-    strList.append(("E: 8.5m, 30")+angle_sign);
-    strList.append(("F: 8.5m, 30")+angle_sign);
-    strList.append(("G: 8.5m, 30")+angle_sign);
-    strList.append(("H: 8.5m, 30")+angle_sign);
-    strList.append(("I: 8.5m, 30")+angle_sign);
-    strList.append(("J: 8.5m, 30")+angle_sign);
-    strList.append(("K: 8.5m, 30")+angle_sign);
+    //激光雷达障碍物检测列表
+    for(int i = 0 ; i < msg_obstacle_distance.count_lidar; ++i){
+        strList.append(QString::number(msg_obstacle_distance.type_lidar[i]) + ":" + \
+                       QString::number(msg_obstacle_distance.distance_lidar[i],'f', 1) + "m, " + \
+                       QString::number(msg_obstacle_distance.yaw_lidar[i], 'f', 1) + angle_sign);
+    }
+
     int nCount = strList.size();
     for(int i = 0; i < nCount; i++)
     {
@@ -325,22 +337,22 @@ void MainWindow::on_pbt_initial_ack_clicked()//初始化界面确认按钮
 
 }
 
-void MainWindow::on_pbt_back_tuitu_none_clicked()
+void MainWindow::on_pbt_back_tuitu_none_clicked()//返回
 {
     ui->stackedWidget->setCurrentIndex(4);//初始化界面
 }
 
-void MainWindow::on_pbt_back_pingdi_clicked()
+void MainWindow::on_pbt_back_pingdi_clicked()//返回
 {
     ui->stackedWidget->setCurrentIndex(4);//初始化界面
 }
 
-void MainWindow::on_pbt_back_tuitu_clicked()
+void MainWindow::on_pbt_back_tuitu_clicked()//返回
 {
     ui->stackedWidget->setCurrentIndex(4);//初始化界面
 }
 
-void MainWindow::on_pbt_back_yalu_clicked()
+void MainWindow::on_pbt_back_yalu_clicked()//返回
 {
     ui->stackedWidget->setCurrentIndex(4);//初始化界面
 }

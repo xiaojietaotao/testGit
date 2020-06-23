@@ -46,8 +46,54 @@ public:
     QVBoxLayout *verticalLayout_336;
     QLabel *Label_6;
     QLineEdit *lineEdit_87;
-    QWidget *gridLayoutWidget_3;
-    QGridLayout *gridLayout_4;
+    QTabWidget *tb_working_visable_show;
+    QWidget *w_working_path;
+    MyQLabel *lb_line;
+    QWidget *w_working_describe;
+    QLabel *show_txt1;
+    QRadioButton *radioButton;
+    QWidget *w_working_surroundings;
+    QLabel *lb_surroundings;
+    QLabel *label_44;
+    QLineEdit *le_car_num;
+    QLineEdit *le_system_time;
+    QPushButton *pbt_path_control;
+    QWidget *formLayoutWidget_6;
+    QHBoxLayout *horizontalLayout;
+    QLabel *label_43;
+    QLineEdit *le_control_para;
+    QLabel *label_50;
+    QLineEdit *le_control_para_2;
+    QLabel *label_51;
+    QLineEdit *le_control_para_3;
+    QLabel *label_65;
+    QLineEdit *le_car_num_6;
+    QLabel *label_36;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *label_41;
+    QLineEdit *le_left_ultra_radar_2;
+    QWidget *widget1;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *label_45;
+    QLineEdit *le_left_ultra_radar_3;
+    QLabel *label_34;
+    QPushButton *pbt_3Dlaser;
+    QLabel *label_39;
+    QListView *lv_laser_item;
+    QPushButton *pbt_ultrasonic_radar;
+    QLineEdit *le_right_ultra_radar;
+    QLabel *label_42;
+    QLineEdit *le_left_ultra_radar;
+    QLabel *label_40;
+    QPushButton *pbt_mili_wave_radar;
+    QLineEdit *le_right_mili_wave_radar;
+    QLineEdit *le_back_left_mili_wave_radar;
+    QLabel *label_37;
+    QLabel *label_38;
+    QLabel *label_35;
+    QLineEdit *le_left_mili_wave_radar;
+    QWidget *widget2;
     QFormLayout *formLayout_30;
     QLabel *label_615;
     QLineEdit *lineEdit_190;
@@ -59,30 +105,7 @@ public:
     QLineEdit *lineEdit_193;
     QLabel *label_617;
     QLineEdit *lineEdit_194;
-    QGridLayout *gridLayout_3;
-    QFormLayout *formLayout_24;
-    QLabel *label_599;
-    QLineEdit *umbd_engineWaterTp;
-    QLabel *label_600;
-    QLineEdit *umbd_oilTp;
-    QLabel *label_603;
-    QLineEdit *umbd_oilLevel;
-    QLabel *label_604;
-    QLineEdit *umbd_oilPressureState;
-    QLabel *label_601;
-    QLineEdit *umbd_systemVoltageState;
-    QLabel *label_602;
-    QLineEdit *umbd_workHours;
-    QLabel *label_607;
-    QLineEdit *umbd_vehicleErrorCode;
-    QLabel *label_608;
-    QLineEdit *umbd_errorCode;
-    QLabel *label_611;
-    QLineEdit *lineEdit_186;
-    QLabel *label_612;
-    QLineEdit *lineEdit_187;
-    QLabel *label_483;
-    QLineEdit *lineEdit_73;
+    QWidget *widget3;
     QFormLayout *formLayout_23;
     QLabel *label_593;
     QLineEdit *umbd_brakeState;
@@ -100,60 +123,24 @@ public:
     QLineEdit *umbd_leftMotorSpeed;
     QLabel *label_606;
     QLineEdit *umbd_rightMotorSpeed;
-    QLabel *label_609;
-    QLineEdit *lineEdit_184;
-    QLabel *label_610;
-    QLineEdit *lineEdit_185;
-    QLabel *label_482;
-    QLineEdit *lineEdit_72;
-    QTabWidget *tabWidget_2;
-    QWidget *tab_7;
-    MyQLabel *lb_line;
-    QWidget *tab_8;
-    QLabel *show_txt1;
-    QRadioButton *radioButton;
-    QWidget *gridLayoutWidget;
-    QGridLayout *gridLayout_2;
-    QPushButton *pbt_ultrasonic_radar;
-    QFormLayout *formLayout_5;
-    QLabel *label_35;
-    QLineEdit *le_back_left_mili_wave_radar;
-    QLabel *label_37;
-    QLineEdit *le_left_mili_wave_radar;
-    QLabel *label_38;
-    QLineEdit *le_right_mili_wave_radar;
-    QFormLayout *formLayout_3;
-    QLabel *label_40;
-    QLineEdit *le_left_ultra_radar;
-    QLabel *label_42;
-    QLineEdit *le_right_ultra_radar;
-    QPushButton *pbt_3Dlaser;
-    QPushButton *pbt_mili_wave_radar;
-    QGridLayout *gridLayout_5;
-    QLabel *label_36;
-    QHBoxLayout *horizontalLayout_3;
-    QLabel *label_45;
-    QLineEdit *le_left_ultra_radar_3;
-    QHBoxLayout *horizontalLayout_2;
-    QLabel *label_41;
-    QLineEdit *le_left_ultra_radar_2;
-    QLabel *label_34;
-    QLabel *label_39;
-    QListView *lv_laser_item;
-    QLabel *label_44;
-    QLineEdit *le_car_num;
-    QLineEdit *le_system_time;
-    QPushButton *pbt_path_control;
-    QWidget *formLayoutWidget_6;
-    QHBoxLayout *horizontalLayout;
-    QLabel *label_43;
-    QLineEdit *le_control_para;
-    QLabel *label_50;
-    QLineEdit *le_control_para_2;
-    QLabel *label_51;
-    QLineEdit *le_control_para_3;
-    QLabel *label_65;
-    QLineEdit *le_car_num_6;
+    QWidget *widget4;
+    QFormLayout *formLayout_24;
+    QLabel *label_604;
+    QLineEdit *umbd_oilPressureState;
+    QLabel *label_599;
+    QLineEdit *umbd_engineWaterTp;
+    QLabel *label_600;
+    QLineEdit *umbd_oilTp;
+    QLabel *label_603;
+    QLineEdit *umbd_oilLevel;
+    QLabel *label_601;
+    QLineEdit *umbd_systemVoltageState;
+    QLabel *label_602;
+    QLineEdit *umbd_workHours;
+    QLabel *label_607;
+    QLineEdit *umbd_vehicleErrorCode;
+    QLabel *label_608;
+    QLineEdit *umbd_errorCode;
     QWidget *layoutWidget2;
     QHBoxLayout *horizontalLayout_7;
     QVBoxLayout *verticalLayout_7;
@@ -174,13 +161,6 @@ public:
     QWidget *tab_10;
     QLabel *show_txt_tuitu;
     QRadioButton *radioButton_2;
-    QWidget *layoutWidget_2;
-    QHBoxLayout *horizontalLayout_252;
-    QLabel *Label_7;
-    QLineEdit *lineEdit_77;
-    QVBoxLayout *verticalLayout_337;
-    QLabel *Label_8;
-    QLineEdit *lineEdit_88;
     QLineEdit *le_car_num_2;
     QLabel *label_46;
     QLineEdit *le_system_time_tuitu;
@@ -193,7 +173,7 @@ public:
     QVBoxLayout *verticalLayout_6;
     QPushButton *btn_canmore_tuitu;
     QPushButton *btn_workdata_tuitu;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QFormLayout *formLayout_26;
     QLabel *label_633;
     QLineEdit *mbd_engine_intake_manifold_tem;
@@ -215,6 +195,10 @@ public:
     QLineEdit *mbd_fuel_consumption_2;
     QLabel *label_642;
     QLineEdit *mbd_fuel_consumption_3;
+    QLineEdit *lineEdit_77;
+    QLabel *Label_7;
+    QLabel *Label_8;
+    QLineEdit *lineEdit_88;
     QWidget *pingdi_page;
     QTabWidget *tabWidget_5;
     QWidget *tab_11;
@@ -303,7 +287,7 @@ public:
     QPushButton *btn_workdata_yalu;
     QWidget *initial_page;
     QPushButton *pbt_scraper_more;
-    QPushButton *pBtn_delete_edge_15;
+    QPushButton *pbt_connect_pc;
     QComboBox *select_car;
     QLabel *lbl_vertex_number_43;
     QPushButton *pbt_initial_ack;
@@ -343,13 +327,13 @@ public:
         tuitu_page_none->setObjectName(QString::fromUtf8("tuitu_page_none"));
         tabWidget = new QTabWidget(tuitu_page_none);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(0, 0, 800, 451));
+        tabWidget->setGeometry(QRect(0, 0, 790, 450));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
         tabWidget->setSizePolicy(sizePolicy);
-        tabWidget->setMaximumSize(QSize(800, 600));
+        tabWidget->setMaximumSize(QSize(800, 480));
         QFont font1;
         font1.setPointSize(9);
         font1.setBold(true);
@@ -361,7 +345,7 @@ public:
         tab->setObjectName(QString::fromUtf8("tab"));
         layoutWidget1 = new QWidget(tab);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(0, 310, 260, 30));
+        layoutWidget1->setGeometry(QRect(0, 310, 239, 31));
         layoutWidget1->setFont(font);
         horizontalLayout_251 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_251->setSpacing(6);
@@ -400,628 +384,41 @@ public:
 
         horizontalLayout_251->addWidget(lineEdit_87);
 
-        gridLayoutWidget_3 = new QWidget(tab);
-        gridLayoutWidget_3->setObjectName(QString::fromUtf8("gridLayoutWidget_3"));
-        gridLayoutWidget_3->setGeometry(QRect(0, 0, 260, 310));
-        gridLayoutWidget_3->setFont(font);
-        gridLayout_4 = new QGridLayout(gridLayoutWidget_3);
-        gridLayout_4->setSpacing(6);
-        gridLayout_4->setContentsMargins(11, 11, 11, 11);
-        gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
-        gridLayout_4->setHorizontalSpacing(5);
-        gridLayout_4->setVerticalSpacing(2);
-        gridLayout_4->setContentsMargins(0, 0, 0, 0);
-        formLayout_30 = new QFormLayout();
-        formLayout_30->setSpacing(6);
-        formLayout_30->setObjectName(QString::fromUtf8("formLayout_30"));
-        formLayout_30->setHorizontalSpacing(6);
-        formLayout_30->setVerticalSpacing(0);
-        label_615 = new QLabel(gridLayoutWidget_3);
-        label_615->setObjectName(QString::fromUtf8("label_615"));
-        label_615->setFont(font);
-        label_615->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(0, QFormLayout::LabelRole, label_615);
-
-        lineEdit_190 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_190->setObjectName(QString::fromUtf8("lineEdit_190"));
-        lineEdit_190->setFont(font);
-        lineEdit_190->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(0, QFormLayout::FieldRole, lineEdit_190);
-
-        label_616 = new QLabel(gridLayoutWidget_3);
-        label_616->setObjectName(QString::fromUtf8("label_616"));
-        label_616->setFont(font);
-        label_616->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(1, QFormLayout::LabelRole, label_616);
-
-        lineEdit_191 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_191->setObjectName(QString::fromUtf8("lineEdit_191"));
-        lineEdit_191->setFont(font);
-        lineEdit_191->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(1, QFormLayout::FieldRole, lineEdit_191);
-
-        label_619 = new QLabel(gridLayoutWidget_3);
-        label_619->setObjectName(QString::fromUtf8("label_619"));
-        label_619->setFont(font);
-        label_619->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(2, QFormLayout::LabelRole, label_619);
-
-        lineEdit_192 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_192->setObjectName(QString::fromUtf8("lineEdit_192"));
-        lineEdit_192->setFont(font);
-        lineEdit_192->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(2, QFormLayout::FieldRole, lineEdit_192);
-
-        label_620 = new QLabel(gridLayoutWidget_3);
-        label_620->setObjectName(QString::fromUtf8("label_620"));
-        label_620->setFont(font);
-        label_620->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(3, QFormLayout::LabelRole, label_620);
-
-        lineEdit_193 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_193->setObjectName(QString::fromUtf8("lineEdit_193"));
-        lineEdit_193->setFont(font);
-        lineEdit_193->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(3, QFormLayout::FieldRole, lineEdit_193);
-
-        label_617 = new QLabel(gridLayoutWidget_3);
-        label_617->setObjectName(QString::fromUtf8("label_617"));
-        label_617->setFont(font);
-        label_617->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(4, QFormLayout::LabelRole, label_617);
-
-        lineEdit_194 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_194->setObjectName(QString::fromUtf8("lineEdit_194"));
-        lineEdit_194->setFont(font);
-        lineEdit_194->setAlignment(Qt::AlignCenter);
-
-        formLayout_30->setWidget(4, QFormLayout::FieldRole, lineEdit_194);
-
-
-        gridLayout_4->addLayout(formLayout_30, 1, 0, 1, 1);
-
-        gridLayout_3 = new QGridLayout();
-        gridLayout_3->setSpacing(6);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        gridLayout_3->setHorizontalSpacing(0);
-        gridLayout_3->setVerticalSpacing(6);
-        formLayout_24 = new QFormLayout();
-        formLayout_24->setSpacing(6);
-        formLayout_24->setObjectName(QString::fromUtf8("formLayout_24"));
-        formLayout_24->setVerticalSpacing(0);
-        label_599 = new QLabel(gridLayoutWidget_3);
-        label_599->setObjectName(QString::fromUtf8("label_599"));
-        label_599->setFont(font);
-        label_599->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(0, QFormLayout::LabelRole, label_599);
-
-        umbd_engineWaterTp = new QLineEdit(gridLayoutWidget_3);
-        umbd_engineWaterTp->setObjectName(QString::fromUtf8("umbd_engineWaterTp"));
-        umbd_engineWaterTp->setFont(font);
-        umbd_engineWaterTp->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(0, QFormLayout::FieldRole, umbd_engineWaterTp);
-
-        label_600 = new QLabel(gridLayoutWidget_3);
-        label_600->setObjectName(QString::fromUtf8("label_600"));
-        label_600->setFont(font);
-        label_600->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(1, QFormLayout::LabelRole, label_600);
-
-        umbd_oilTp = new QLineEdit(gridLayoutWidget_3);
-        umbd_oilTp->setObjectName(QString::fromUtf8("umbd_oilTp"));
-        umbd_oilTp->setFont(font);
-        umbd_oilTp->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(1, QFormLayout::FieldRole, umbd_oilTp);
-
-        label_603 = new QLabel(gridLayoutWidget_3);
-        label_603->setObjectName(QString::fromUtf8("label_603"));
-        label_603->setFont(font);
-        label_603->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(2, QFormLayout::LabelRole, label_603);
-
-        umbd_oilLevel = new QLineEdit(gridLayoutWidget_3);
-        umbd_oilLevel->setObjectName(QString::fromUtf8("umbd_oilLevel"));
-        umbd_oilLevel->setFont(font);
-        umbd_oilLevel->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(2, QFormLayout::FieldRole, umbd_oilLevel);
-
-        label_604 = new QLabel(gridLayoutWidget_3);
-        label_604->setObjectName(QString::fromUtf8("label_604"));
-        label_604->setFont(font);
-        label_604->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(3, QFormLayout::LabelRole, label_604);
-
-        umbd_oilPressureState = new QLineEdit(gridLayoutWidget_3);
-        umbd_oilPressureState->setObjectName(QString::fromUtf8("umbd_oilPressureState"));
-        umbd_oilPressureState->setFont(font);
-        umbd_oilPressureState->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(3, QFormLayout::FieldRole, umbd_oilPressureState);
-
-        label_601 = new QLabel(gridLayoutWidget_3);
-        label_601->setObjectName(QString::fromUtf8("label_601"));
-        label_601->setFont(font);
-        label_601->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(4, QFormLayout::LabelRole, label_601);
-
-        umbd_systemVoltageState = new QLineEdit(gridLayoutWidget_3);
-        umbd_systemVoltageState->setObjectName(QString::fromUtf8("umbd_systemVoltageState"));
-        umbd_systemVoltageState->setFont(font);
-        umbd_systemVoltageState->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(4, QFormLayout::FieldRole, umbd_systemVoltageState);
-
-        label_602 = new QLabel(gridLayoutWidget_3);
-        label_602->setObjectName(QString::fromUtf8("label_602"));
-        label_602->setFont(font);
-        label_602->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(5, QFormLayout::LabelRole, label_602);
-
-        umbd_workHours = new QLineEdit(gridLayoutWidget_3);
-        umbd_workHours->setObjectName(QString::fromUtf8("umbd_workHours"));
-        umbd_workHours->setFont(font);
-        umbd_workHours->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(5, QFormLayout::FieldRole, umbd_workHours);
-
-        label_607 = new QLabel(gridLayoutWidget_3);
-        label_607->setObjectName(QString::fromUtf8("label_607"));
-        label_607->setFont(font);
-        label_607->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(6, QFormLayout::LabelRole, label_607);
-
-        umbd_vehicleErrorCode = new QLineEdit(gridLayoutWidget_3);
-        umbd_vehicleErrorCode->setObjectName(QString::fromUtf8("umbd_vehicleErrorCode"));
-        umbd_vehicleErrorCode->setFont(font);
-        umbd_vehicleErrorCode->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(6, QFormLayout::FieldRole, umbd_vehicleErrorCode);
-
-        label_608 = new QLabel(gridLayoutWidget_3);
-        label_608->setObjectName(QString::fromUtf8("label_608"));
-        label_608->setFont(font);
-        label_608->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(7, QFormLayout::LabelRole, label_608);
-
-        umbd_errorCode = new QLineEdit(gridLayoutWidget_3);
-        umbd_errorCode->setObjectName(QString::fromUtf8("umbd_errorCode"));
-        umbd_errorCode->setFont(font);
-        umbd_errorCode->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(7, QFormLayout::FieldRole, umbd_errorCode);
-
-        label_611 = new QLabel(gridLayoutWidget_3);
-        label_611->setObjectName(QString::fromUtf8("label_611"));
-        label_611->setFont(font);
-        label_611->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(8, QFormLayout::LabelRole, label_611);
-
-        lineEdit_186 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_186->setObjectName(QString::fromUtf8("lineEdit_186"));
-        lineEdit_186->setFont(font);
-        lineEdit_186->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(8, QFormLayout::FieldRole, lineEdit_186);
-
-        label_612 = new QLabel(gridLayoutWidget_3);
-        label_612->setObjectName(QString::fromUtf8("label_612"));
-        label_612->setFont(font);
-        label_612->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(9, QFormLayout::LabelRole, label_612);
-
-        lineEdit_187 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_187->setObjectName(QString::fromUtf8("lineEdit_187"));
-        lineEdit_187->setFont(font);
-        lineEdit_187->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(9, QFormLayout::FieldRole, lineEdit_187);
-
-        label_483 = new QLabel(gridLayoutWidget_3);
-        label_483->setObjectName(QString::fromUtf8("label_483"));
-        label_483->setFont(font);
-        label_483->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(10, QFormLayout::LabelRole, label_483);
-
-        lineEdit_73 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_73->setObjectName(QString::fromUtf8("lineEdit_73"));
-        lineEdit_73->setFont(font);
-        lineEdit_73->setAlignment(Qt::AlignCenter);
-
-        formLayout_24->setWidget(10, QFormLayout::FieldRole, lineEdit_73);
-
-
-        gridLayout_3->addLayout(formLayout_24, 0, 1, 1, 1);
-
-        formLayout_23 = new QFormLayout();
-        formLayout_23->setSpacing(6);
-        formLayout_23->setObjectName(QString::fromUtf8("formLayout_23"));
-        formLayout_23->setVerticalSpacing(0);
-        label_593 = new QLabel(gridLayoutWidget_3);
-        label_593->setObjectName(QString::fromUtf8("label_593"));
-        label_593->setFont(font);
-        label_593->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(0, QFormLayout::LabelRole, label_593);
-
-        umbd_brakeState = new QLineEdit(gridLayoutWidget_3);
-        umbd_brakeState->setObjectName(QString::fromUtf8("umbd_brakeState"));
-        umbd_brakeState->setFont(font);
-        umbd_brakeState->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(0, QFormLayout::FieldRole, umbd_brakeState);
-
-        label_594 = new QLabel(gridLayoutWidget_3);
-        label_594->setObjectName(QString::fromUtf8("label_594"));
-        label_594->setFont(font);
-        label_594->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(1, QFormLayout::LabelRole, label_594);
-
-        umbd_bladeLockState = new QLineEdit(gridLayoutWidget_3);
-        umbd_bladeLockState->setObjectName(QString::fromUtf8("umbd_bladeLockState"));
-        umbd_bladeLockState->setFont(font);
-        umbd_bladeLockState->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(1, QFormLayout::FieldRole, umbd_bladeLockState);
-
-        label_597 = new QLabel(gridLayoutWidget_3);
-        label_597->setObjectName(QString::fromUtf8("label_597"));
-        label_597->setFont(font);
-        label_597->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(2, QFormLayout::LabelRole, label_597);
-
-        umbd_walkLockState = new QLineEdit(gridLayoutWidget_3);
-        umbd_walkLockState->setObjectName(QString::fromUtf8("umbd_walkLockState"));
-        umbd_walkLockState->setFont(font);
-        umbd_walkLockState->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(2, QFormLayout::FieldRole, umbd_walkLockState);
-
-        label_598 = new QLabel(gridLayoutWidget_3);
-        label_598->setObjectName(QString::fromUtf8("label_598"));
-        label_598->setFont(font);
-        label_598->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(3, QFormLayout::LabelRole, label_598);
-
-        umbd_engineRpm = new QLineEdit(gridLayoutWidget_3);
-        umbd_engineRpm->setObjectName(QString::fromUtf8("umbd_engineRpm"));
-        umbd_engineRpm->setFont(font);
-        umbd_engineRpm->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(3, QFormLayout::FieldRole, umbd_engineRpm);
-
-        label_595 = new QLabel(gridLayoutWidget_3);
-        label_595->setObjectName(QString::fromUtf8("label_595"));
-        label_595->setFont(font);
-        label_595->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(4, QFormLayout::LabelRole, label_595);
-
-        umbd_forwardGear = new QLineEdit(gridLayoutWidget_3);
-        umbd_forwardGear->setObjectName(QString::fromUtf8("umbd_forwardGear"));
-        umbd_forwardGear->setFont(font);
-        umbd_forwardGear->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(4, QFormLayout::FieldRole, umbd_forwardGear);
-
-        label_596 = new QLabel(gridLayoutWidget_3);
-        label_596->setObjectName(QString::fromUtf8("label_596"));
-        label_596->setFont(font);
-        label_596->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(5, QFormLayout::LabelRole, label_596);
-
-        umbd_backGear = new QLineEdit(gridLayoutWidget_3);
-        umbd_backGear->setObjectName(QString::fromUtf8("umbd_backGear"));
-        umbd_backGear->setFont(font);
-        umbd_backGear->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(5, QFormLayout::FieldRole, umbd_backGear);
-
-        label_605 = new QLabel(gridLayoutWidget_3);
-        label_605->setObjectName(QString::fromUtf8("label_605"));
-        label_605->setFont(font);
-        label_605->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(6, QFormLayout::LabelRole, label_605);
-
-        umbd_leftMotorSpeed = new QLineEdit(gridLayoutWidget_3);
-        umbd_leftMotorSpeed->setObjectName(QString::fromUtf8("umbd_leftMotorSpeed"));
-        umbd_leftMotorSpeed->setFont(font);
-        umbd_leftMotorSpeed->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(6, QFormLayout::FieldRole, umbd_leftMotorSpeed);
-
-        label_606 = new QLabel(gridLayoutWidget_3);
-        label_606->setObjectName(QString::fromUtf8("label_606"));
-        label_606->setFont(font);
-        label_606->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(7, QFormLayout::LabelRole, label_606);
-
-        umbd_rightMotorSpeed = new QLineEdit(gridLayoutWidget_3);
-        umbd_rightMotorSpeed->setObjectName(QString::fromUtf8("umbd_rightMotorSpeed"));
-        umbd_rightMotorSpeed->setFont(font);
-        umbd_rightMotorSpeed->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(7, QFormLayout::FieldRole, umbd_rightMotorSpeed);
-
-        label_609 = new QLabel(gridLayoutWidget_3);
-        label_609->setObjectName(QString::fromUtf8("label_609"));
-        label_609->setFont(font);
-        label_609->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(8, QFormLayout::LabelRole, label_609);
-
-        lineEdit_184 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_184->setObjectName(QString::fromUtf8("lineEdit_184"));
-        lineEdit_184->setFont(font);
-        lineEdit_184->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(8, QFormLayout::FieldRole, lineEdit_184);
-
-        label_610 = new QLabel(gridLayoutWidget_3);
-        label_610->setObjectName(QString::fromUtf8("label_610"));
-        label_610->setFont(font);
-        label_610->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(9, QFormLayout::LabelRole, label_610);
-
-        lineEdit_185 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_185->setObjectName(QString::fromUtf8("lineEdit_185"));
-        lineEdit_185->setFont(font);
-        lineEdit_185->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(9, QFormLayout::FieldRole, lineEdit_185);
-
-        label_482 = new QLabel(gridLayoutWidget_3);
-        label_482->setObjectName(QString::fromUtf8("label_482"));
-        label_482->setFont(font);
-        label_482->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(10, QFormLayout::LabelRole, label_482);
-
-        lineEdit_72 = new QLineEdit(gridLayoutWidget_3);
-        lineEdit_72->setObjectName(QString::fromUtf8("lineEdit_72"));
-        lineEdit_72->setFont(font);
-        lineEdit_72->setAlignment(Qt::AlignCenter);
-
-        formLayout_23->setWidget(10, QFormLayout::FieldRole, lineEdit_72);
-
-
-        gridLayout_3->addLayout(formLayout_23, 0, 0, 1, 1);
-
-
-        gridLayout_4->addLayout(gridLayout_3, 0, 0, 1, 1);
-
-        tabWidget_2 = new QTabWidget(tab);
-        tabWidget_2->setObjectName(QString::fromUtf8("tabWidget_2"));
-        tabWidget_2->setGeometry(QRect(260, 20, 381, 371));
-        tabWidget_2->setFont(font);
-        tabWidget_2->setAutoFillBackground(false);
-        tab_7 = new QWidget();
-        tab_7->setObjectName(QString::fromUtf8("tab_7"));
-        lb_line = new MyQLabel(tab_7);
+        tb_working_visable_show = new QTabWidget(tab);
+        tb_working_visable_show->setObjectName(QString::fromUtf8("tb_working_visable_show"));
+        tb_working_visable_show->setGeometry(QRect(260, 20, 391, 371));
+        tb_working_visable_show->setFont(font);
+        tb_working_visable_show->setAutoFillBackground(false);
+        w_working_path = new QWidget();
+        w_working_path->setObjectName(QString::fromUtf8("w_working_path"));
+        lb_line = new MyQLabel(w_working_path);
         lb_line->setObjectName(QString::fromUtf8("lb_line"));
         lb_line->setGeometry(QRect(0, 0, 371, 341));
-        tabWidget_2->addTab(tab_7, QString());
-        tab_8 = new QWidget();
-        tab_8->setObjectName(QString::fromUtf8("tab_8"));
-        show_txt1 = new QLabel(tab_8);
+        tb_working_visable_show->addTab(w_working_path, QString());
+        w_working_describe = new QWidget();
+        w_working_describe->setObjectName(QString::fromUtf8("w_working_describe"));
+        show_txt1 = new QLabel(w_working_describe);
         show_txt1->setObjectName(QString::fromUtf8("show_txt1"));
-        show_txt1->setGeometry(QRect(0, 10, 371, 331));
+        show_txt1->setGeometry(QRect(0, 10, 380, 331));
         show_txt1->setMaximumSize(QSize(380, 390));
         QFont font2;
         font2.setPointSize(18);
         show_txt1->setFont(font2);
         show_txt1->setWordWrap(true);
-        radioButton = new QRadioButton(tab_8);
+        radioButton = new QRadioButton(w_working_describe);
         radioButton->setObjectName(QString::fromUtf8("radioButton"));
         radioButton->setGeometry(QRect(290, 410, 76, 16));
         radioButton->setFont(font);
-        tabWidget_2->addTab(tab_8, QString());
-        gridLayoutWidget = new QWidget(tab);
-        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(650, 0, 121, 420));
-        gridLayoutWidget->setFont(font);
-        gridLayout_2 = new QGridLayout(gridLayoutWidget);
-        gridLayout_2->setSpacing(6);
-        gridLayout_2->setContentsMargins(11, 11, 11, 11);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        gridLayout_2->setVerticalSpacing(7);
-        gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        pbt_ultrasonic_radar = new QPushButton(gridLayoutWidget);
-        pbt_ultrasonic_radar->setObjectName(QString::fromUtf8("pbt_ultrasonic_radar"));
-        pbt_ultrasonic_radar->setFont(font1);
-        pbt_ultrasonic_radar->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 127);"));
-
-        gridLayout_2->addWidget(pbt_ultrasonic_radar, 5, 1, 1, 1);
-
-        formLayout_5 = new QFormLayout();
-        formLayout_5->setSpacing(6);
-        formLayout_5->setObjectName(QString::fromUtf8("formLayout_5"));
-        formLayout_5->setHorizontalSpacing(3);
-        formLayout_5->setVerticalSpacing(0);
-        label_35 = new QLabel(gridLayoutWidget);
-        label_35->setObjectName(QString::fromUtf8("label_35"));
-        label_35->setFont(font);
-
-        formLayout_5->setWidget(0, QFormLayout::LabelRole, label_35);
-
-        le_back_left_mili_wave_radar = new QLineEdit(gridLayoutWidget);
-        le_back_left_mili_wave_radar->setObjectName(QString::fromUtf8("le_back_left_mili_wave_radar"));
-        le_back_left_mili_wave_radar->setFont(font);
-
-        formLayout_5->setWidget(0, QFormLayout::FieldRole, le_back_left_mili_wave_radar);
-
-        label_37 = new QLabel(gridLayoutWidget);
-        label_37->setObjectName(QString::fromUtf8("label_37"));
-        label_37->setFont(font);
-
-        formLayout_5->setWidget(1, QFormLayout::LabelRole, label_37);
-
-        le_left_mili_wave_radar = new QLineEdit(gridLayoutWidget);
-        le_left_mili_wave_radar->setObjectName(QString::fromUtf8("le_left_mili_wave_radar"));
-        le_left_mili_wave_radar->setFont(font);
-
-        formLayout_5->setWidget(1, QFormLayout::FieldRole, le_left_mili_wave_radar);
-
-        label_38 = new QLabel(gridLayoutWidget);
-        label_38->setObjectName(QString::fromUtf8("label_38"));
-        label_38->setFont(font);
-
-        formLayout_5->setWidget(2, QFormLayout::LabelRole, label_38);
-
-        le_right_mili_wave_radar = new QLineEdit(gridLayoutWidget);
-        le_right_mili_wave_radar->setObjectName(QString::fromUtf8("le_right_mili_wave_radar"));
-        le_right_mili_wave_radar->setFont(font);
-
-        formLayout_5->setWidget(2, QFormLayout::FieldRole, le_right_mili_wave_radar);
-
-
-        gridLayout_2->addLayout(formLayout_5, 8, 1, 1, 1);
-
-        formLayout_3 = new QFormLayout();
-        formLayout_3->setSpacing(6);
-        formLayout_3->setObjectName(QString::fromUtf8("formLayout_3"));
-        formLayout_3->setVerticalSpacing(0);
-        label_40 = new QLabel(gridLayoutWidget);
-        label_40->setObjectName(QString::fromUtf8("label_40"));
-        label_40->setFont(font);
-
-        formLayout_3->setWidget(0, QFormLayout::LabelRole, label_40);
-
-        le_left_ultra_radar = new QLineEdit(gridLayoutWidget);
-        le_left_ultra_radar->setObjectName(QString::fromUtf8("le_left_ultra_radar"));
-        le_left_ultra_radar->setFont(font);
-
-        formLayout_3->setWidget(0, QFormLayout::FieldRole, le_left_ultra_radar);
-
-        label_42 = new QLabel(gridLayoutWidget);
-        label_42->setObjectName(QString::fromUtf8("label_42"));
-        label_42->setFont(font);
-
-        formLayout_3->setWidget(1, QFormLayout::LabelRole, label_42);
-
-        le_right_ultra_radar = new QLineEdit(gridLayoutWidget);
-        le_right_ultra_radar->setObjectName(QString::fromUtf8("le_right_ultra_radar"));
-        le_right_ultra_radar->setFont(font);
-
-        formLayout_3->setWidget(1, QFormLayout::FieldRole, le_right_ultra_radar);
-
-
-        gridLayout_2->addLayout(formLayout_3, 6, 1, 1, 1);
-
-        pbt_3Dlaser = new QPushButton(gridLayoutWidget);
-        pbt_3Dlaser->setObjectName(QString::fromUtf8("pbt_3Dlaser"));
-        pbt_3Dlaser->setFont(font1);
-        pbt_3Dlaser->setStyleSheet(QString::fromUtf8("background-color: rgb(138, 226, 52);"));
-
-        gridLayout_2->addWidget(pbt_3Dlaser, 2, 1, 1, 1);
-
-        pbt_mili_wave_radar = new QPushButton(gridLayoutWidget);
-        pbt_mili_wave_radar->setObjectName(QString::fromUtf8("pbt_mili_wave_radar"));
-        pbt_mili_wave_radar->setFont(font1);
-        pbt_mili_wave_radar->setStyleSheet(QString::fromUtf8("background-color: rgb(141, 182, 250);"));
-
-        gridLayout_2->addWidget(pbt_mili_wave_radar, 7, 1, 1, 1);
-
-        gridLayout_5 = new QGridLayout();
-        gridLayout_5->setSpacing(6);
-        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
-        gridLayout_5->setVerticalSpacing(0);
-        label_36 = new QLabel(gridLayoutWidget);
-        label_36->setObjectName(QString::fromUtf8("label_36"));
-        label_36->setFont(font1);
-        label_36->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
-        label_36->setAlignment(Qt::AlignCenter);
-
-        gridLayout_5->addWidget(label_36, 0, 0, 1, 1);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setSpacing(6);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        label_45 = new QLabel(gridLayoutWidget);
-        label_45->setObjectName(QString::fromUtf8("label_45"));
-        label_45->setFont(font);
-
-        horizontalLayout_3->addWidget(label_45);
-
-        le_left_ultra_radar_3 = new QLineEdit(gridLayoutWidget);
-        le_left_ultra_radar_3->setObjectName(QString::fromUtf8("le_left_ultra_radar_3"));
-        le_left_ultra_radar_3->setFont(font);
-
-        horizontalLayout_3->addWidget(le_left_ultra_radar_3);
-
-
-        gridLayout_5->addLayout(horizontalLayout_3, 2, 0, 1, 1);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_41 = new QLabel(gridLayoutWidget);
-        label_41->setObjectName(QString::fromUtf8("label_41"));
-        label_41->setFont(font);
-
-        horizontalLayout_2->addWidget(label_41);
-
-        le_left_ultra_radar_2 = new QLineEdit(gridLayoutWidget);
-        le_left_ultra_radar_2->setObjectName(QString::fromUtf8("le_left_ultra_radar_2"));
-        le_left_ultra_radar_2->setFont(font);
-
-        horizontalLayout_2->addWidget(le_left_ultra_radar_2);
-
-
-        gridLayout_5->addLayout(horizontalLayout_2, 1, 0, 1, 1);
-
-
-        gridLayout_2->addLayout(gridLayout_5, 0, 1, 1, 1);
-
-        label_34 = new QLabel(gridLayoutWidget);
-        label_34->setObjectName(QString::fromUtf8("label_34"));
-        label_34->setFont(font1);
-        label_34->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
-        label_34->setAlignment(Qt::AlignCenter);
-
-        gridLayout_2->addWidget(label_34, 1, 1, 1, 1);
-
-        label_39 = new QLabel(gridLayoutWidget);
-        label_39->setObjectName(QString::fromUtf8("label_39"));
-        label_39->setFont(font);
-
-        gridLayout_2->addWidget(label_39, 3, 1, 1, 1);
-
-        lv_laser_item = new QListView(gridLayoutWidget);
-        lv_laser_item->setObjectName(QString::fromUtf8("lv_laser_item"));
-        lv_laser_item->setFont(font);
-
-        gridLayout_2->addWidget(lv_laser_item, 4, 1, 1, 1);
-
+        tb_working_visable_show->addTab(w_working_describe, QString());
+        w_working_surroundings = new QWidget();
+        w_working_surroundings->setObjectName(QString::fromUtf8("w_working_surroundings"));
+        lb_surroundings = new QLabel(w_working_surroundings);
+        lb_surroundings->setObjectName(QString::fromUtf8("lb_surroundings"));
+        lb_surroundings->setGeometry(QRect(80, 30, 231, 251));
+        lb_surroundings->setMaximumSize(QSize(380, 390));
+        lb_surroundings->setFont(font2);
+        lb_surroundings->setWordWrap(true);
+        tb_working_visable_show->addTab(w_working_surroundings, QString());
         label_44 = new QLabel(tab);
         label_44->setObjectName(QString::fromUtf8("label_44"));
         label_44->setGeometry(QRect(260, 0, 51, 21));
@@ -1039,7 +436,7 @@ public:
         le_system_time->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
         pbt_path_control = new QPushButton(tab);
         pbt_path_control->setObjectName(QString::fromUtf8("pbt_path_control"));
-        pbt_path_control->setGeometry(QRect(260, 390, 141, 21));
+        pbt_path_control->setGeometry(QRect(260, 390, 141, 30));
         pbt_path_control->setFont(font1);
         pbt_path_control->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
         formLayoutWidget_6 = new QWidget(tab);
@@ -1097,9 +494,449 @@ public:
         le_car_num_6->setGeometry(QRect(450, 0, 51, 20));
         le_car_num_6->setFont(font);
         le_car_num_6->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
+        label_36 = new QLabel(tab);
+        label_36->setObjectName(QString::fromUtf8("label_36"));
+        label_36->setGeometry(QRect(660, 0, 117, 18));
+        label_36->setFont(font1);
+        label_36->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
+        label_36->setAlignment(Qt::AlignCenter);
+        widget = new QWidget(tab);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(660, 20, 117, 24));
+        horizontalLayout_2 = new QHBoxLayout(widget);
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_41 = new QLabel(widget);
+        label_41->setObjectName(QString::fromUtf8("label_41"));
+        label_41->setFont(font);
+
+        horizontalLayout_2->addWidget(label_41);
+
+        le_left_ultra_radar_2 = new QLineEdit(widget);
+        le_left_ultra_radar_2->setObjectName(QString::fromUtf8("le_left_ultra_radar_2"));
+        le_left_ultra_radar_2->setFont(font);
+
+        horizontalLayout_2->addWidget(le_left_ultra_radar_2);
+
+        widget1 = new QWidget(tab);
+        widget1->setObjectName(QString::fromUtf8("widget1"));
+        widget1->setGeometry(QRect(660, 50, 117, 24));
+        horizontalLayout_3 = new QHBoxLayout(widget1);
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_45 = new QLabel(widget1);
+        label_45->setObjectName(QString::fromUtf8("label_45"));
+        label_45->setFont(font);
+
+        horizontalLayout_3->addWidget(label_45);
+
+        le_left_ultra_radar_3 = new QLineEdit(widget1);
+        le_left_ultra_radar_3->setObjectName(QString::fromUtf8("le_left_ultra_radar_3"));
+        le_left_ultra_radar_3->setFont(font);
+
+        horizontalLayout_3->addWidget(le_left_ultra_radar_3);
+
+        label_34 = new QLabel(tab);
+        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setGeometry(QRect(660, 80, 119, 18));
+        label_34->setFont(font1);
+        label_34->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
+        label_34->setAlignment(Qt::AlignCenter);
+        pbt_3Dlaser = new QPushButton(tab);
+        pbt_3Dlaser->setObjectName(QString::fromUtf8("pbt_3Dlaser"));
+        pbt_3Dlaser->setGeometry(QRect(660, 110, 119, 21));
+        pbt_3Dlaser->setFont(font1);
+        pbt_3Dlaser->setStyleSheet(QString::fromUtf8("background-color: rgb(138, 226, 52);"));
+        label_39 = new QLabel(tab);
+        label_39->setObjectName(QString::fromUtf8("label_39"));
+        label_39->setGeometry(QRect(660, 130, 119, 18));
+        label_39->setFont(font);
+        lv_laser_item = new QListView(tab);
+        lv_laser_item->setObjectName(QString::fromUtf8("lv_laser_item"));
+        lv_laser_item->setGeometry(QRect(660, 150, 119, 61));
+        lv_laser_item->setFont(font);
+        pbt_ultrasonic_radar = new QPushButton(tab);
+        pbt_ultrasonic_radar->setObjectName(QString::fromUtf8("pbt_ultrasonic_radar"));
+        pbt_ultrasonic_radar->setGeometry(QRect(660, 230, 119, 21));
+        pbt_ultrasonic_radar->setFont(font1);
+        pbt_ultrasonic_radar->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 255, 127);"));
+        le_right_ultra_radar = new QLineEdit(tab);
+        le_right_ultra_radar->setObjectName(QString::fromUtf8("le_right_ultra_radar"));
+        le_right_ultra_radar->setGeometry(QRect(710, 270, 70, 22));
+        le_right_ultra_radar->setFont(font);
+        label_42 = new QLabel(tab);
+        label_42->setObjectName(QString::fromUtf8("label_42"));
+        label_42->setGeometry(QRect(660, 270, 55, 22));
+        label_42->setFont(font);
+        le_left_ultra_radar = new QLineEdit(tab);
+        le_left_ultra_radar->setObjectName(QString::fromUtf8("le_left_ultra_radar"));
+        le_left_ultra_radar->setGeometry(QRect(710, 248, 70, 22));
+        le_left_ultra_radar->setFont(font);
+        label_40 = new QLabel(tab);
+        label_40->setObjectName(QString::fromUtf8("label_40"));
+        label_40->setGeometry(QRect(660, 250, 55, 22));
+        label_40->setFont(font);
+        pbt_mili_wave_radar = new QPushButton(tab);
+        pbt_mili_wave_radar->setObjectName(QString::fromUtf8("pbt_mili_wave_radar"));
+        pbt_mili_wave_radar->setGeometry(QRect(660, 320, 119, 21));
+        pbt_mili_wave_radar->setFont(font1);
+        pbt_mili_wave_radar->setStyleSheet(QString::fromUtf8("background-color: rgb(141, 182, 250);"));
+        le_right_mili_wave_radar = new QLineEdit(tab);
+        le_right_mili_wave_radar->setObjectName(QString::fromUtf8("le_right_mili_wave_radar"));
+        le_right_mili_wave_radar->setGeometry(QRect(710, 390, 66, 22));
+        le_right_mili_wave_radar->setFont(font);
+        le_back_left_mili_wave_radar = new QLineEdit(tab);
+        le_back_left_mili_wave_radar->setObjectName(QString::fromUtf8("le_back_left_mili_wave_radar"));
+        le_back_left_mili_wave_radar->setGeometry(QRect(710, 346, 66, 22));
+        le_back_left_mili_wave_radar->setFont(font);
+        label_37 = new QLabel(tab);
+        label_37->setObjectName(QString::fromUtf8("label_37"));
+        label_37->setGeometry(QRect(659, 368, 48, 22));
+        label_37->setFont(font);
+        label_38 = new QLabel(tab);
+        label_38->setObjectName(QString::fromUtf8("label_38"));
+        label_38->setGeometry(QRect(659, 390, 48, 22));
+        label_38->setFont(font);
+        label_35 = new QLabel(tab);
+        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setGeometry(QRect(659, 346, 48, 22));
+        label_35->setFont(font);
+        le_left_mili_wave_radar = new QLineEdit(tab);
+        le_left_mili_wave_radar->setObjectName(QString::fromUtf8("le_left_mili_wave_radar"));
+        le_left_mili_wave_radar->setGeometry(QRect(710, 368, 66, 22));
+        le_left_mili_wave_radar->setFont(font);
+        widget2 = new QWidget(tab);
+        widget2->setObjectName(QString::fromUtf8("widget2"));
+        widget2->setGeometry(QRect(0, 190, 261, 118));
+        formLayout_30 = new QFormLayout(widget2);
+        formLayout_30->setSpacing(6);
+        formLayout_30->setContentsMargins(11, 11, 11, 11);
+        formLayout_30->setObjectName(QString::fromUtf8("formLayout_30"));
+        formLayout_30->setHorizontalSpacing(6);
+        formLayout_30->setVerticalSpacing(0);
+        formLayout_30->setContentsMargins(0, 0, 0, 0);
+        label_615 = new QLabel(widget2);
+        label_615->setObjectName(QString::fromUtf8("label_615"));
+        label_615->setFont(font);
+        label_615->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(0, QFormLayout::LabelRole, label_615);
+
+        lineEdit_190 = new QLineEdit(widget2);
+        lineEdit_190->setObjectName(QString::fromUtf8("lineEdit_190"));
+        lineEdit_190->setFont(font);
+        lineEdit_190->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(0, QFormLayout::FieldRole, lineEdit_190);
+
+        label_616 = new QLabel(widget2);
+        label_616->setObjectName(QString::fromUtf8("label_616"));
+        label_616->setFont(font);
+        label_616->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(1, QFormLayout::LabelRole, label_616);
+
+        lineEdit_191 = new QLineEdit(widget2);
+        lineEdit_191->setObjectName(QString::fromUtf8("lineEdit_191"));
+        lineEdit_191->setFont(font);
+        lineEdit_191->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(1, QFormLayout::FieldRole, lineEdit_191);
+
+        label_619 = new QLabel(widget2);
+        label_619->setObjectName(QString::fromUtf8("label_619"));
+        label_619->setFont(font);
+        label_619->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(2, QFormLayout::LabelRole, label_619);
+
+        lineEdit_192 = new QLineEdit(widget2);
+        lineEdit_192->setObjectName(QString::fromUtf8("lineEdit_192"));
+        lineEdit_192->setFont(font);
+        lineEdit_192->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(2, QFormLayout::FieldRole, lineEdit_192);
+
+        label_620 = new QLabel(widget2);
+        label_620->setObjectName(QString::fromUtf8("label_620"));
+        label_620->setFont(font);
+        label_620->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(3, QFormLayout::LabelRole, label_620);
+
+        lineEdit_193 = new QLineEdit(widget2);
+        lineEdit_193->setObjectName(QString::fromUtf8("lineEdit_193"));
+        lineEdit_193->setFont(font);
+        lineEdit_193->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(3, QFormLayout::FieldRole, lineEdit_193);
+
+        label_617 = new QLabel(widget2);
+        label_617->setObjectName(QString::fromUtf8("label_617"));
+        label_617->setFont(font);
+        label_617->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(4, QFormLayout::LabelRole, label_617);
+
+        lineEdit_194 = new QLineEdit(widget2);
+        lineEdit_194->setObjectName(QString::fromUtf8("lineEdit_194"));
+        lineEdit_194->setFont(font);
+        lineEdit_194->setAlignment(Qt::AlignCenter);
+
+        formLayout_30->setWidget(4, QFormLayout::FieldRole, lineEdit_194);
+
+        widget3 = new QWidget(tab);
+        widget3->setObjectName(QString::fromUtf8("widget3"));
+        widget3->setGeometry(QRect(0, 0, 128, 181));
+        formLayout_23 = new QFormLayout(widget3);
+        formLayout_23->setSpacing(6);
+        formLayout_23->setContentsMargins(11, 11, 11, 11);
+        formLayout_23->setObjectName(QString::fromUtf8("formLayout_23"));
+        formLayout_23->setSizeConstraint(QLayout::SetMinimumSize);
+        formLayout_23->setLabelAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
+        formLayout_23->setHorizontalSpacing(0);
+        formLayout_23->setVerticalSpacing(0);
+        formLayout_23->setContentsMargins(0, 0, 0, 0);
+        label_593 = new QLabel(widget3);
+        label_593->setObjectName(QString::fromUtf8("label_593"));
+        label_593->setFont(font);
+        label_593->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(0, QFormLayout::LabelRole, label_593);
+
+        umbd_brakeState = new QLineEdit(widget3);
+        umbd_brakeState->setObjectName(QString::fromUtf8("umbd_brakeState"));
+        umbd_brakeState->setFont(font);
+        umbd_brakeState->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(0, QFormLayout::FieldRole, umbd_brakeState);
+
+        label_594 = new QLabel(widget3);
+        label_594->setObjectName(QString::fromUtf8("label_594"));
+        label_594->setFont(font);
+        label_594->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(1, QFormLayout::LabelRole, label_594);
+
+        umbd_bladeLockState = new QLineEdit(widget3);
+        umbd_bladeLockState->setObjectName(QString::fromUtf8("umbd_bladeLockState"));
+        umbd_bladeLockState->setFont(font);
+        umbd_bladeLockState->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(1, QFormLayout::FieldRole, umbd_bladeLockState);
+
+        label_597 = new QLabel(widget3);
+        label_597->setObjectName(QString::fromUtf8("label_597"));
+        label_597->setFont(font);
+        label_597->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(2, QFormLayout::LabelRole, label_597);
+
+        umbd_walkLockState = new QLineEdit(widget3);
+        umbd_walkLockState->setObjectName(QString::fromUtf8("umbd_walkLockState"));
+        umbd_walkLockState->setFont(font);
+        umbd_walkLockState->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(2, QFormLayout::FieldRole, umbd_walkLockState);
+
+        label_598 = new QLabel(widget3);
+        label_598->setObjectName(QString::fromUtf8("label_598"));
+        label_598->setFont(font);
+        label_598->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(3, QFormLayout::LabelRole, label_598);
+
+        umbd_engineRpm = new QLineEdit(widget3);
+        umbd_engineRpm->setObjectName(QString::fromUtf8("umbd_engineRpm"));
+        umbd_engineRpm->setFont(font);
+        umbd_engineRpm->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(3, QFormLayout::FieldRole, umbd_engineRpm);
+
+        label_595 = new QLabel(widget3);
+        label_595->setObjectName(QString::fromUtf8("label_595"));
+        label_595->setFont(font);
+        label_595->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(4, QFormLayout::LabelRole, label_595);
+
+        umbd_forwardGear = new QLineEdit(widget3);
+        umbd_forwardGear->setObjectName(QString::fromUtf8("umbd_forwardGear"));
+        umbd_forwardGear->setFont(font);
+        umbd_forwardGear->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(4, QFormLayout::FieldRole, umbd_forwardGear);
+
+        label_596 = new QLabel(widget3);
+        label_596->setObjectName(QString::fromUtf8("label_596"));
+        label_596->setFont(font);
+        label_596->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(5, QFormLayout::LabelRole, label_596);
+
+        umbd_backGear = new QLineEdit(widget3);
+        umbd_backGear->setObjectName(QString::fromUtf8("umbd_backGear"));
+        umbd_backGear->setFont(font);
+        umbd_backGear->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(5, QFormLayout::FieldRole, umbd_backGear);
+
+        label_605 = new QLabel(widget3);
+        label_605->setObjectName(QString::fromUtf8("label_605"));
+        label_605->setFont(font);
+        label_605->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(6, QFormLayout::LabelRole, label_605);
+
+        umbd_leftMotorSpeed = new QLineEdit(widget3);
+        umbd_leftMotorSpeed->setObjectName(QString::fromUtf8("umbd_leftMotorSpeed"));
+        umbd_leftMotorSpeed->setFont(font);
+        umbd_leftMotorSpeed->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(6, QFormLayout::FieldRole, umbd_leftMotorSpeed);
+
+        label_606 = new QLabel(widget3);
+        label_606->setObjectName(QString::fromUtf8("label_606"));
+        label_606->setFont(font);
+        label_606->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(7, QFormLayout::LabelRole, label_606);
+
+        umbd_rightMotorSpeed = new QLineEdit(widget3);
+        umbd_rightMotorSpeed->setObjectName(QString::fromUtf8("umbd_rightMotorSpeed"));
+        umbd_rightMotorSpeed->setFont(font);
+        umbd_rightMotorSpeed->setAlignment(Qt::AlignCenter);
+
+        formLayout_23->setWidget(7, QFormLayout::FieldRole, umbd_rightMotorSpeed);
+
+        widget4 = new QWidget(tab);
+        widget4->setObjectName(QString::fromUtf8("widget4"));
+        widget4->setGeometry(QRect(140, 0, 121, 181));
+        formLayout_24 = new QFormLayout(widget4);
+        formLayout_24->setSpacing(6);
+        formLayout_24->setContentsMargins(11, 11, 11, 11);
+        formLayout_24->setObjectName(QString::fromUtf8("formLayout_24"));
+        formLayout_24->setVerticalSpacing(0);
+        formLayout_24->setContentsMargins(0, 0, 0, 0);
+        label_604 = new QLabel(widget4);
+        label_604->setObjectName(QString::fromUtf8("label_604"));
+        label_604->setFont(font);
+        label_604->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(0, QFormLayout::LabelRole, label_604);
+
+        umbd_oilPressureState = new QLineEdit(widget4);
+        umbd_oilPressureState->setObjectName(QString::fromUtf8("umbd_oilPressureState"));
+        umbd_oilPressureState->setFont(font);
+        umbd_oilPressureState->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(0, QFormLayout::FieldRole, umbd_oilPressureState);
+
+        label_599 = new QLabel(widget4);
+        label_599->setObjectName(QString::fromUtf8("label_599"));
+        label_599->setFont(font);
+        label_599->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(1, QFormLayout::LabelRole, label_599);
+
+        umbd_engineWaterTp = new QLineEdit(widget4);
+        umbd_engineWaterTp->setObjectName(QString::fromUtf8("umbd_engineWaterTp"));
+        umbd_engineWaterTp->setFont(font);
+        umbd_engineWaterTp->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(1, QFormLayout::FieldRole, umbd_engineWaterTp);
+
+        label_600 = new QLabel(widget4);
+        label_600->setObjectName(QString::fromUtf8("label_600"));
+        label_600->setFont(font);
+        label_600->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(2, QFormLayout::LabelRole, label_600);
+
+        umbd_oilTp = new QLineEdit(widget4);
+        umbd_oilTp->setObjectName(QString::fromUtf8("umbd_oilTp"));
+        umbd_oilTp->setFont(font);
+        umbd_oilTp->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(2, QFormLayout::FieldRole, umbd_oilTp);
+
+        label_603 = new QLabel(widget4);
+        label_603->setObjectName(QString::fromUtf8("label_603"));
+        label_603->setFont(font);
+        label_603->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(3, QFormLayout::LabelRole, label_603);
+
+        umbd_oilLevel = new QLineEdit(widget4);
+        umbd_oilLevel->setObjectName(QString::fromUtf8("umbd_oilLevel"));
+        umbd_oilLevel->setFont(font);
+        umbd_oilLevel->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(3, QFormLayout::FieldRole, umbd_oilLevel);
+
+        label_601 = new QLabel(widget4);
+        label_601->setObjectName(QString::fromUtf8("label_601"));
+        label_601->setFont(font);
+        label_601->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(4, QFormLayout::LabelRole, label_601);
+
+        umbd_systemVoltageState = new QLineEdit(widget4);
+        umbd_systemVoltageState->setObjectName(QString::fromUtf8("umbd_systemVoltageState"));
+        umbd_systemVoltageState->setFont(font);
+        umbd_systemVoltageState->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(4, QFormLayout::FieldRole, umbd_systemVoltageState);
+
+        label_602 = new QLabel(widget4);
+        label_602->setObjectName(QString::fromUtf8("label_602"));
+        label_602->setFont(font);
+        label_602->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(5, QFormLayout::LabelRole, label_602);
+
+        umbd_workHours = new QLineEdit(widget4);
+        umbd_workHours->setObjectName(QString::fromUtf8("umbd_workHours"));
+        umbd_workHours->setFont(font);
+        umbd_workHours->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(5, QFormLayout::FieldRole, umbd_workHours);
+
+        label_607 = new QLabel(widget4);
+        label_607->setObjectName(QString::fromUtf8("label_607"));
+        label_607->setFont(font);
+        label_607->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(6, QFormLayout::LabelRole, label_607);
+
+        umbd_vehicleErrorCode = new QLineEdit(widget4);
+        umbd_vehicleErrorCode->setObjectName(QString::fromUtf8("umbd_vehicleErrorCode"));
+        umbd_vehicleErrorCode->setFont(font);
+        umbd_vehicleErrorCode->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(6, QFormLayout::FieldRole, umbd_vehicleErrorCode);
+
+        label_608 = new QLabel(widget4);
+        label_608->setObjectName(QString::fromUtf8("label_608"));
+        label_608->setFont(font);
+        label_608->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(7, QFormLayout::LabelRole, label_608);
+
+        umbd_errorCode = new QLineEdit(widget4);
+        umbd_errorCode->setObjectName(QString::fromUtf8("umbd_errorCode"));
+        umbd_errorCode->setFont(font);
+        umbd_errorCode->setAlignment(Qt::AlignCenter);
+
+        formLayout_24->setWidget(7, QFormLayout::FieldRole, umbd_errorCode);
+
         layoutWidget2 = new QWidget(tab);
         layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
-        layoutWidget2->setGeometry(QRect(0, 342, 261, 70));
+        layoutWidget2->setGeometry(QRect(0, 340, 261, 80));
         layoutWidget2->setFont(font);
         horizontalLayout_7 = new QHBoxLayout(layoutWidget2);
         horizontalLayout_7->setSpacing(6);
@@ -1204,47 +1041,6 @@ public:
         radioButton_2->setGeometry(QRect(290, 410, 76, 16));
         radioButton_2->setFont(font);
         tabWidget_tuitu->addTab(tab_10, QString());
-        layoutWidget_2 = new QWidget(tab_4);
-        layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(0, 250, 251, 30));
-        layoutWidget_2->setFont(font);
-        horizontalLayout_252 = new QHBoxLayout(layoutWidget_2);
-        horizontalLayout_252->setSpacing(6);
-        horizontalLayout_252->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_252->setObjectName(QString::fromUtf8("horizontalLayout_252"));
-        horizontalLayout_252->setContentsMargins(0, 0, 0, 0);
-        Label_7 = new QLabel(layoutWidget_2);
-        Label_7->setObjectName(QString::fromUtf8("Label_7"));
-        Label_7->setFont(font3);
-
-        horizontalLayout_252->addWidget(Label_7);
-
-        lineEdit_77 = new QLineEdit(layoutWidget_2);
-        lineEdit_77->setObjectName(QString::fromUtf8("lineEdit_77"));
-        lineEdit_77->setFont(font3);
-        lineEdit_77->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_252->addWidget(lineEdit_77);
-
-        verticalLayout_337 = new QVBoxLayout();
-        verticalLayout_337->setSpacing(6);
-        verticalLayout_337->setObjectName(QString::fromUtf8("verticalLayout_337"));
-
-        horizontalLayout_252->addLayout(verticalLayout_337);
-
-        Label_8 = new QLabel(layoutWidget_2);
-        Label_8->setObjectName(QString::fromUtf8("Label_8"));
-        Label_8->setFont(font3);
-
-        horizontalLayout_252->addWidget(Label_8);
-
-        lineEdit_88 = new QLineEdit(layoutWidget_2);
-        lineEdit_88->setObjectName(QString::fromUtf8("lineEdit_88"));
-        lineEdit_88->setFont(font3);
-        lineEdit_88->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_252->addWidget(lineEdit_88);
-
         le_car_num_2 = new QLineEdit(tab_4);
         le_car_num_2->setObjectName(QString::fromUtf8("le_car_num_2"));
         le_car_num_2->setGeometry(QRect(330, 0, 84, 20));
@@ -1316,155 +1112,173 @@ public:
 
         horizontalLayout_6->addLayout(verticalLayout_6);
 
-        widget = new QWidget(tab_4);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(0, 0, 254, 252));
-        formLayout_26 = new QFormLayout(widget);
+        layoutWidget = new QWidget(tab_4);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 254, 251));
+        formLayout_26 = new QFormLayout(layoutWidget);
         formLayout_26->setSpacing(6);
         formLayout_26->setContentsMargins(11, 11, 11, 11);
         formLayout_26->setObjectName(QString::fromUtf8("formLayout_26"));
         formLayout_26->setVerticalSpacing(0);
         formLayout_26->setContentsMargins(0, 0, 0, 0);
-        label_633 = new QLabel(widget);
+        label_633 = new QLabel(layoutWidget);
         label_633->setObjectName(QString::fromUtf8("label_633"));
         label_633->setFont(font3);
         label_633->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(0, QFormLayout::LabelRole, label_633);
 
-        mbd_engine_intake_manifold_tem = new QLineEdit(widget);
+        mbd_engine_intake_manifold_tem = new QLineEdit(layoutWidget);
         mbd_engine_intake_manifold_tem->setObjectName(QString::fromUtf8("mbd_engine_intake_manifold_tem"));
         mbd_engine_intake_manifold_tem->setFont(font3);
         mbd_engine_intake_manifold_tem->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(0, QFormLayout::FieldRole, mbd_engine_intake_manifold_tem);
 
-        label_634 = new QLabel(widget);
+        label_634 = new QLabel(layoutWidget);
         label_634->setObjectName(QString::fromUtf8("label_634"));
         label_634->setFont(font3);
         label_634->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(1, QFormLayout::LabelRole, label_634);
 
-        mbd_engine_working_time = new QLineEdit(widget);
+        mbd_engine_working_time = new QLineEdit(layoutWidget);
         mbd_engine_working_time->setObjectName(QString::fromUtf8("mbd_engine_working_time"));
         mbd_engine_working_time->setFont(font3);
         mbd_engine_working_time->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(1, QFormLayout::FieldRole, mbd_engine_working_time);
 
-        label_635 = new QLabel(widget);
+        label_635 = new QLabel(layoutWidget);
         label_635->setObjectName(QString::fromUtf8("label_635"));
         label_635->setFont(font3);
         label_635->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(2, QFormLayout::LabelRole, label_635);
 
-        mbd_engine_speed = new QLineEdit(widget);
+        mbd_engine_speed = new QLineEdit(layoutWidget);
         mbd_engine_speed->setObjectName(QString::fromUtf8("mbd_engine_speed"));
         mbd_engine_speed->setFont(font3);
         mbd_engine_speed->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(2, QFormLayout::FieldRole, mbd_engine_speed);
 
-        label_636 = new QLabel(widget);
+        label_636 = new QLabel(layoutWidget);
         label_636->setObjectName(QString::fromUtf8("label_636"));
         label_636->setFont(font3);
         label_636->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(3, QFormLayout::LabelRole, label_636);
 
-        mbd_engine_failure_code = new QLineEdit(widget);
+        mbd_engine_failure_code = new QLineEdit(layoutWidget);
         mbd_engine_failure_code->setObjectName(QString::fromUtf8("mbd_engine_failure_code"));
         mbd_engine_failure_code->setFont(font3);
         mbd_engine_failure_code->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(3, QFormLayout::FieldRole, mbd_engine_failure_code);
 
-        label_637 = new QLabel(widget);
+        label_637 = new QLabel(layoutWidget);
         label_637->setObjectName(QString::fromUtf8("label_637"));
         label_637->setFont(font3);
         label_637->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(4, QFormLayout::LabelRole, label_637);
 
-        mbd_system_voltage = new QLineEdit(widget);
+        mbd_system_voltage = new QLineEdit(layoutWidget);
         mbd_system_voltage->setObjectName(QString::fromUtf8("mbd_system_voltage"));
         mbd_system_voltage->setFont(font3);
         mbd_system_voltage->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(4, QFormLayout::FieldRole, mbd_system_voltage);
 
-        label_638 = new QLabel(widget);
+        label_638 = new QLabel(layoutWidget);
         label_638->setObjectName(QString::fromUtf8("label_638"));
         label_638->setFont(font3);
         label_638->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(5, QFormLayout::LabelRole, label_638);
 
-        mbd_engine_oil_pressure = new QLineEdit(widget);
+        mbd_engine_oil_pressure = new QLineEdit(layoutWidget);
         mbd_engine_oil_pressure->setObjectName(QString::fromUtf8("mbd_engine_oil_pressure"));
         mbd_engine_oil_pressure->setFont(font3);
         mbd_engine_oil_pressure->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(5, QFormLayout::FieldRole, mbd_engine_oil_pressure);
 
-        label_639 = new QLabel(widget);
+        label_639 = new QLabel(layoutWidget);
         label_639->setObjectName(QString::fromUtf8("label_639"));
         label_639->setFont(font3);
         label_639->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(6, QFormLayout::LabelRole, label_639);
 
-        mbd_engine_coolant_temperature = new QLineEdit(widget);
+        mbd_engine_coolant_temperature = new QLineEdit(layoutWidget);
         mbd_engine_coolant_temperature->setObjectName(QString::fromUtf8("mbd_engine_coolant_temperature"));
         mbd_engine_coolant_temperature->setFont(font3);
         mbd_engine_coolant_temperature->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(6, QFormLayout::FieldRole, mbd_engine_coolant_temperature);
 
-        label_640 = new QLabel(widget);
+        label_640 = new QLabel(layoutWidget);
         label_640->setObjectName(QString::fromUtf8("label_640"));
         label_640->setFont(font3);
         label_640->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(7, QFormLayout::LabelRole, label_640);
 
-        mbd_fuel_consumption = new QLineEdit(widget);
+        mbd_fuel_consumption = new QLineEdit(layoutWidget);
         mbd_fuel_consumption->setObjectName(QString::fromUtf8("mbd_fuel_consumption"));
         mbd_fuel_consumption->setFont(font3);
         mbd_fuel_consumption->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(7, QFormLayout::FieldRole, mbd_fuel_consumption);
 
-        label_641 = new QLabel(widget);
+        label_641 = new QLabel(layoutWidget);
         label_641->setObjectName(QString::fromUtf8("label_641"));
         label_641->setFont(font3);
         label_641->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(8, QFormLayout::LabelRole, label_641);
 
-        mbd_fuel_consumption_2 = new QLineEdit(widget);
+        mbd_fuel_consumption_2 = new QLineEdit(layoutWidget);
         mbd_fuel_consumption_2->setObjectName(QString::fromUtf8("mbd_fuel_consumption_2"));
         mbd_fuel_consumption_2->setFont(font3);
         mbd_fuel_consumption_2->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(8, QFormLayout::FieldRole, mbd_fuel_consumption_2);
 
-        label_642 = new QLabel(widget);
+        label_642 = new QLabel(layoutWidget);
         label_642->setObjectName(QString::fromUtf8("label_642"));
         label_642->setFont(font3);
         label_642->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(9, QFormLayout::LabelRole, label_642);
 
-        mbd_fuel_consumption_3 = new QLineEdit(widget);
+        mbd_fuel_consumption_3 = new QLineEdit(layoutWidget);
         mbd_fuel_consumption_3->setObjectName(QString::fromUtf8("mbd_fuel_consumption_3"));
         mbd_fuel_consumption_3->setFont(font3);
         mbd_fuel_consumption_3->setAlignment(Qt::AlignCenter);
 
         formLayout_26->setWidget(9, QFormLayout::FieldRole, mbd_fuel_consumption_3);
 
+        lineEdit_77 = new QLineEdit(tab_4);
+        lineEdit_77->setObjectName(QString::fromUtf8("lineEdit_77"));
+        lineEdit_77->setGeometry(QRect(80, 260, 99, 25));
+        lineEdit_77->setFont(font3);
+        lineEdit_77->setAlignment(Qt::AlignCenter);
+        Label_7 = new QLabel(tab_4);
+        Label_7->setObjectName(QString::fromUtf8("Label_7"));
+        Label_7->setGeometry(QRect(0, 250, 75, 39));
+        Label_7->setFont(font3);
+        Label_8 = new QLabel(tab_4);
+        Label_8->setObjectName(QString::fromUtf8("Label_8"));
+        Label_8->setGeometry(QRect(0, 290, 79, 39));
+        Label_8->setFont(font3);
+        lineEdit_88 = new QLineEdit(tab_4);
+        lineEdit_88->setObjectName(QString::fromUtf8("lineEdit_88"));
+        lineEdit_88->setGeometry(QRect(80, 300, 101, 25));
+        lineEdit_88->setFont(font3);
+        lineEdit_88->setAlignment(Qt::AlignCenter);
         tabWidget_3->addTab(tab_4, QString());
         stackedWidget->addWidget(tuitu_page);
         pingdi_page = new QWidget();
@@ -1505,7 +1319,7 @@ public:
         tabWidget_pingdi->addTab(tab_13, QString());
         layoutWidget4 = new QWidget(tab_11);
         layoutWidget4->setObjectName(QString::fromUtf8("layoutWidget4"));
-        layoutWidget4->setGeometry(QRect(10, 90, 231, 202));
+        layoutWidget4->setGeometry(QRect(10, 90, 231, 226));
         formLayout_28 = new QFormLayout(layoutWidget4);
         formLayout_28->setSpacing(6);
         formLayout_28->setContentsMargins(11, 11, 11, 11);
@@ -1756,7 +1570,7 @@ public:
         tabWidget_yalu->addTab(tab_18, QString());
         layoutWidget_4 = new QWidget(tab_16);
         layoutWidget_4->setObjectName(QString::fromUtf8("layoutWidget_4"));
-        layoutWidget_4->setGeometry(QRect(10, 90, 231, 202));
+        layoutWidget_4->setGeometry(QRect(10, 90, 231, 226));
         formLayout_32 = new QFormLayout(layoutWidget_4);
         formLayout_32->setSpacing(6);
         formLayout_32->setContentsMargins(11, 11, 11, 11);
@@ -1938,11 +1752,11 @@ public:
         pbt_scraper_more->setGeometry(QRect(260, 130, 251, 23));
         pbt_scraper_more->setFont(font4);
         pbt_scraper_more->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
-        pBtn_delete_edge_15 = new QPushButton(initial_page);
-        pBtn_delete_edge_15->setObjectName(QString::fromUtf8("pBtn_delete_edge_15"));
-        pBtn_delete_edge_15->setGeometry(QRect(260, 190, 251, 23));
-        pBtn_delete_edge_15->setFont(font4);
-        pBtn_delete_edge_15->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
+        pbt_connect_pc = new QPushButton(initial_page);
+        pbt_connect_pc->setObjectName(QString::fromUtf8("pbt_connect_pc"));
+        pbt_connect_pc->setGeometry(QRect(260, 190, 251, 23));
+        pbt_connect_pc->setFont(font4);
+        pbt_connect_pc->setStyleSheet(QString::fromUtf8("background-color: rgb(37, 162, 242);"));
         select_car = new QComboBox(initial_page);
         select_car->addItem(QString());
         select_car->addItem(QString());
@@ -2010,7 +1824,7 @@ public:
         label_653->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(initial_page);
         pbt_scraper_more->raise();
-        pBtn_delete_edge_15->raise();
+        pbt_connect_pc->raise();
         select_car->raise();
         lbl_vertex_number_43->raise();
         pbt_initial_ack->raise();
@@ -2035,11 +1849,11 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(4);
+        stackedWidget->setCurrentIndex(3);
         tabWidget->setCurrentIndex(0);
-        tabWidget_2->setCurrentIndex(1);
+        tb_working_visable_show->setCurrentIndex(2);
         tabWidget_3->setCurrentIndex(0);
-        tabWidget_tuitu->setCurrentIndex(1);
+        tabWidget_tuitu->setCurrentIndex(0);
         tabWidget_5->setCurrentIndex(0);
         tabWidget_pingdi->setCurrentIndex(1);
         tabWidget_7->setCurrentIndex(0);
@@ -2056,6 +1870,35 @@ public:
         lineEdit_75->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
         Label_6->setText(QCoreApplication::translate("MainWindow", " \344\275\234\344\270\232\345\256\214\346\210\220\357\274\232", nullptr));
         lineEdit_87->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        lb_line->setText(QString());
+        tb_working_visable_show->setTabText(tb_working_visable_show->indexOf(w_working_path), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\275\234\344\270\232\350\275\250\350\277\271", nullptr));
+        show_txt1->setText(QString());
+        radioButton->setText(QCoreApplication::translate("MainWindow", "  \346\230\276\347\244\272\351\232\234\347\242\215\350\214\203\345\233\264", nullptr));
+        tb_working_visable_show->setTabText(tb_working_visable_show->indexOf(w_working_describe), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\273\273\345\212\241\346\217\217\350\277\260", nullptr));
+        lb_surroundings->setText(QString());
+        tb_working_visable_show->setTabText(tb_working_visable_show->indexOf(w_working_surroundings), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\345\234\272\346\231\257\346\204\237\347\237\245", nullptr));
+        label_44->setText(QCoreApplication::translate("MainWindow", "\350\275\246\350\276\206\347\274\226\345\217\267:", nullptr));
+        pbt_path_control->setText(QCoreApplication::translate("MainWindow", "\344\275\234\344\270\232\350\275\250\350\277\271\350\267\237\350\270\252\344\270\216\346\216\247\345\210\266>>", nullptr));
+        label_43->setText(QCoreApplication::translate("MainWindow", " \345\217\202\346\225\260", nullptr));
+        le_control_para->setText(QCoreApplication::translate("MainWindow", "5", nullptr));
+        label_50->setText(QCoreApplication::translate("MainWindow", "\345\217\202\346\225\260", nullptr));
+        le_control_para_2->setText(QCoreApplication::translate("MainWindow", "6", nullptr));
+        label_51->setText(QCoreApplication::translate("MainWindow", "\345\217\202\346\225\260", nullptr));
+        le_control_para_3->setText(QCoreApplication::translate("MainWindow", "7", nullptr));
+        label_65->setText(QCoreApplication::translate("MainWindow", "\345\267\245\345\234\260\347\274\226\345\217\267", nullptr));
+        label_36->setText(QCoreApplication::translate("MainWindow", "  \344\275\215\345\247\277\344\274\260\350\256\241", nullptr));
+        label_41->setText(QCoreApplication::translate("MainWindow", "\344\275\215\347\275\256\345\235\220\346\240\207", nullptr));
+        label_45->setText(QCoreApplication::translate("MainWindow", "\346\226\271\345\220\221\350\247\222\345\272\246", nullptr));
+        label_34->setText(QCoreApplication::translate("MainWindow", "\351\232\234\347\242\215\347\211\251\346\243\200\346\265\213", nullptr));
+        pbt_3Dlaser->setText(QCoreApplication::translate("MainWindow", "3D\346\277\200\345\205\211\351\233\267\350\276\276>>", nullptr));
+        label_39->setText(QCoreApplication::translate("MainWindow", "\351\232\234\347\242\215\347\211\251\345\217\202\346\225\260\345\210\227\350\241\250\357\274\232", nullptr));
+        pbt_ultrasonic_radar->setText(QCoreApplication::translate("MainWindow", "\350\266\205\345\243\260\346\263\242\351\233\267\350\276\276>>", nullptr));
+        label_42->setText(QCoreApplication::translate("MainWindow", "\345\217\263\351\233\267\350\276\276\357\274\232", nullptr));
+        label_40->setText(QCoreApplication::translate("MainWindow", "\345\267\246\351\233\267\350\276\276\357\274\232", nullptr));
+        pbt_mili_wave_radar->setText(QCoreApplication::translate("MainWindow", "\346\257\253\347\261\263\346\263\242\351\233\267\350\276\276>>", nullptr));
+        label_37->setText(QCoreApplication::translate("MainWindow", "\345\267\246\351\233\267\350\276\276\357\274\232", nullptr));
+        label_38->setText(QCoreApplication::translate("MainWindow", "\345\217\263\351\233\267\350\276\276\357\274\232", nullptr));
+        label_35->setText(QCoreApplication::translate("MainWindow", "\345\220\216\351\233\267\350\276\276\357\274\232", nullptr));
         label_615->setText(QCoreApplication::translate("MainWindow", "\345\267\246\350\276\271\345\235\220\346\240\207X/Y/Z\357\274\232", nullptr));
         lineEdit_190->setText(QCoreApplication::translate("MainWindow", "556.55, 666.66, 1.13", nullptr));
         label_616->setText(QCoreApplication::translate("MainWindow", "\345\217\263\350\276\271\345\235\220\346\240\207X/Y/Z\357\274\232", nullptr));
@@ -2066,28 +1909,6 @@ public:
         lineEdit_193->setText(QCoreApplication::translate("MainWindow", "58.55, 68.66", nullptr));
         label_617->setText(QCoreApplication::translate("MainWindow", "\351\223\262\345\210\200\351\253\230\347\250\213:", nullptr));
         lineEdit_194->setText(QCoreApplication::translate("MainWindow", "1.05", nullptr));
-        label_599->setText(QCoreApplication::translate("MainWindow", "\345\212\250\346\234\272\346\260\264\346\270\251:", nullptr));
-        umbd_engineWaterTp->setText(QCoreApplication::translate("MainWindow", "90", nullptr));
-        label_600->setText(QCoreApplication::translate("MainWindow", "\346\266\262\345\216\213\346\262\271\346\270\251:", nullptr));
-        umbd_oilTp->setText(QCoreApplication::translate("MainWindow", "120", nullptr));
-        label_603->setText(QCoreApplication::translate("MainWindow", "\347\207\203\346\262\271\346\266\262\344\275\215:", nullptr));
-        umbd_oilLevel->setText(QCoreApplication::translate("MainWindow", "70", nullptr));
-        label_604->setText(QCoreApplication::translate("MainWindow", "\346\262\271\345\216\213\347\212\266\346\200\201:", nullptr));
-        umbd_oilPressureState->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_601->setText(QCoreApplication::translate("MainWindow", "\347\224\265\345\216\213\347\212\266\346\200\201:", nullptr));
-        umbd_systemVoltageState->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_602->setText(QCoreApplication::translate("MainWindow", "\345\267\245\344\275\234\346\227\266\351\227\264:", nullptr));
-        umbd_workHours->setText(QCoreApplication::translate("MainWindow", "100", nullptr));
-        label_607->setText(QCoreApplication::translate("MainWindow", "\346\225\264\350\275\246\346\225\205\351\232\234:", nullptr));
-        umbd_vehicleErrorCode->setText(QCoreApplication::translate("MainWindow", "1111", nullptr));
-        label_608->setText(QCoreApplication::translate("MainWindow", "\345\212\250\346\234\272\346\225\205\351\232\234:", nullptr));
-        umbd_errorCode->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_611->setText(QCoreApplication::translate("MainWindow", "\345\267\246\344\277\241\345\217\267\350\275\254", nullptr));
-        lineEdit_186->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_612->setText(QCoreApplication::translate("MainWindow", "\345\217\263\344\277\241\345\217\267\350\275\254:", nullptr));
-        lineEdit_187->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_483->setText(QCoreApplication::translate("MainWindow", "\350\275\254\345\220\221\345\200\274:", nullptr));
-        lineEdit_73->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         label_593->setText(QCoreApplication::translate("MainWindow", "\345\210\266\345\212\250\347\212\266\346\200\201:", nullptr));
         umbd_brakeState->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
         label_594->setText(QCoreApplication::translate("MainWindow", "\351\223\262\345\210\200\347\212\266\346\200\201:", nullptr));
@@ -2104,39 +1925,22 @@ public:
         umbd_leftMotorSpeed->setText(QCoreApplication::translate("MainWindow", "6.0", nullptr));
         label_606->setText(QCoreApplication::translate("MainWindow", "\345\217\263\350\275\256\351\200\237\345\272\246:", nullptr));
         umbd_rightMotorSpeed->setText(QCoreApplication::translate("MainWindow", "6.0", nullptr));
-        label_609->setText(QCoreApplication::translate("MainWindow", "\347\264\247\346\200\245\345\210\266\345\212\250:", nullptr));
-        lineEdit_184->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_610->setText(QCoreApplication::translate("MainWindow", "\350\270\217\346\235\277\345\210\266\345\212\250:", nullptr));
-        lineEdit_185->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        label_482->setText(QCoreApplication::translate("MainWindow", "\346\211\213\346\262\271\351\227\250\345\200\274:", nullptr));
-        lineEdit_72->setText(QCoreApplication::translate("MainWindow", "150", nullptr));
-        lb_line->setText(QString());
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_7), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\275\234\344\270\232\350\275\250\350\277\271", nullptr));
-        show_txt1->setText(QString());
-        radioButton->setText(QCoreApplication::translate("MainWindow", "  \346\230\276\347\244\272\351\232\234\347\242\215\350\214\203\345\233\264", nullptr));
-        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\273\273\345\212\241\346\217\217\350\277\260", nullptr));
-        pbt_ultrasonic_radar->setText(QCoreApplication::translate("MainWindow", "\350\266\205\345\243\260\346\263\242\351\233\267\350\276\276>>", nullptr));
-        label_35->setText(QCoreApplication::translate("MainWindow", "\345\220\216\351\233\267\350\276\276\357\274\232", nullptr));
-        label_37->setText(QCoreApplication::translate("MainWindow", "\345\267\246\351\233\267\350\276\276\357\274\232", nullptr));
-        label_38->setText(QCoreApplication::translate("MainWindow", "\345\217\263\351\233\267\350\276\276\357\274\232", nullptr));
-        label_40->setText(QCoreApplication::translate("MainWindow", "\345\267\246\351\233\267\350\276\276\357\274\232", nullptr));
-        label_42->setText(QCoreApplication::translate("MainWindow", "\345\217\263\351\233\267\350\276\276\357\274\232", nullptr));
-        pbt_3Dlaser->setText(QCoreApplication::translate("MainWindow", "3D\346\277\200\345\205\211\351\233\267\350\276\276>>", nullptr));
-        pbt_mili_wave_radar->setText(QCoreApplication::translate("MainWindow", "\346\257\253\347\261\263\346\263\242\351\233\267\350\276\276>>", nullptr));
-        label_36->setText(QCoreApplication::translate("MainWindow", "  \344\275\215\345\247\277\344\274\260\350\256\241", nullptr));
-        label_45->setText(QCoreApplication::translate("MainWindow", "\346\226\271\345\220\221\350\247\222\345\272\246", nullptr));
-        label_41->setText(QCoreApplication::translate("MainWindow", "\344\275\215\347\275\256\345\235\220\346\240\207", nullptr));
-        label_34->setText(QCoreApplication::translate("MainWindow", "\351\232\234\347\242\215\347\211\251\346\243\200\346\265\213", nullptr));
-        label_39->setText(QCoreApplication::translate("MainWindow", "\351\232\234\347\242\215\347\211\251\345\217\202\346\225\260\345\210\227\350\241\250\357\274\232", nullptr));
-        label_44->setText(QCoreApplication::translate("MainWindow", "\350\275\246\350\276\206\347\274\226\345\217\267:", nullptr));
-        pbt_path_control->setText(QCoreApplication::translate("MainWindow", "\344\275\234\344\270\232\350\275\250\350\277\271\350\267\237\350\270\252\344\270\216\346\216\247\345\210\266>>", nullptr));
-        label_43->setText(QCoreApplication::translate("MainWindow", " \345\217\202\346\225\260", nullptr));
-        le_control_para->setText(QCoreApplication::translate("MainWindow", "5", nullptr));
-        label_50->setText(QCoreApplication::translate("MainWindow", "\345\217\202\346\225\260", nullptr));
-        le_control_para_2->setText(QCoreApplication::translate("MainWindow", "6", nullptr));
-        label_51->setText(QCoreApplication::translate("MainWindow", "\345\217\202\346\225\260", nullptr));
-        le_control_para_3->setText(QCoreApplication::translate("MainWindow", "7", nullptr));
-        label_65->setText(QCoreApplication::translate("MainWindow", "\345\267\245\345\234\260\347\274\226\345\217\267", nullptr));
+        label_604->setText(QCoreApplication::translate("MainWindow", "\346\262\271\345\216\213\347\212\266\346\200\201:", nullptr));
+        umbd_oilPressureState->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        label_599->setText(QCoreApplication::translate("MainWindow", "\345\212\250\346\234\272\346\260\264\346\270\251:", nullptr));
+        umbd_engineWaterTp->setText(QCoreApplication::translate("MainWindow", "90", nullptr));
+        label_600->setText(QCoreApplication::translate("MainWindow", "\346\266\262\345\216\213\346\262\271\346\270\251:", nullptr));
+        umbd_oilTp->setText(QCoreApplication::translate("MainWindow", "120", nullptr));
+        label_603->setText(QCoreApplication::translate("MainWindow", "\347\207\203\346\262\271\346\266\262\344\275\215:", nullptr));
+        umbd_oilLevel->setText(QCoreApplication::translate("MainWindow", "70", nullptr));
+        label_601->setText(QCoreApplication::translate("MainWindow", "\347\224\265\345\216\213\347\212\266\346\200\201:", nullptr));
+        umbd_systemVoltageState->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        label_602->setText(QCoreApplication::translate("MainWindow", "\345\267\245\344\275\234\346\227\266\351\227\264:", nullptr));
+        umbd_workHours->setText(QCoreApplication::translate("MainWindow", "100", nullptr));
+        label_607->setText(QCoreApplication::translate("MainWindow", "\346\225\264\350\275\246\346\225\205\351\232\234:", nullptr));
+        umbd_vehicleErrorCode->setText(QCoreApplication::translate("MainWindow", "1111", nullptr));
+        label_608->setText(QCoreApplication::translate("MainWindow", "\345\212\250\346\234\272\346\225\205\351\232\234:", nullptr));
+        umbd_errorCode->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         lbl_vertex_number_32->setText(QCoreApplication::translate("MainWindow", "\351\200\232\350\256\257\357\274\232ECU/\346\255\243\345\270\270 \346\211\276\345\271\263/\346\255\243\345\270\270", nullptr));
         lbl_vertex_number_33->setText(QCoreApplication::translate("MainWindow", " TCPIP /\346\255\243\345\270\270 5G/\346\255\243\345\270\270", nullptr));
         pbt_back_tuitu_none->setText(QCoreApplication::translate("MainWindow", "\350\277\224\345\233\236\351\205\215\347\275\256\347\225\214\351\235\242", nullptr));
@@ -2150,10 +1954,6 @@ public:
         show_txt_tuitu->setText(QString());
         radioButton_2->setText(QCoreApplication::translate("MainWindow", "  \346\230\276\347\244\272\351\232\234\347\242\215\350\214\203\345\233\264", nullptr));
         tabWidget_tuitu->setTabText(tabWidget_tuitu->indexOf(tab_10), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\273\273\345\212\241\346\217\217\350\277\260", nullptr));
-        Label_7->setText(QCoreApplication::translate("MainWindow", "\345\207\206\345\244\207\345\260\261\344\275\215\357\274\232", nullptr));
-        lineEdit_77->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
-        Label_8->setText(QCoreApplication::translate("MainWindow", " \344\275\234\344\270\232\345\256\214\346\210\220\357\274\232", nullptr));
-        lineEdit_88->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         label_46->setText(QCoreApplication::translate("MainWindow", "\350\275\246\350\276\206/\345\267\245\345\234\260\357\274\232", nullptr));
         lbl_vertex_number_44->setText(QCoreApplication::translate("MainWindow", "\351\200\232\350\256\257\357\274\232ECU/\346\255\243\345\270\270 \346\211\276\345\271\263/\346\255\243\345\270\270", nullptr));
         lbl_vertex_number_34->setText(QCoreApplication::translate("MainWindow", " TCPIP /\346\255\243\345\270\270 5G/\346\255\243\345\270\270", nullptr));
@@ -2180,6 +1980,10 @@ public:
         mbd_fuel_consumption_2->setText(QCoreApplication::translate("MainWindow", "6.0", nullptr));
         label_642->setText(QCoreApplication::translate("MainWindow", "\346\234\272\346\242\260\345\235\220\346\240\207y", nullptr));
         mbd_fuel_consumption_3->setText(QCoreApplication::translate("MainWindow", "6.0", nullptr));
+        lineEdit_77->setText(QCoreApplication::translate("MainWindow", "1", nullptr));
+        Label_7->setText(QCoreApplication::translate("MainWindow", "\345\207\206\345\244\207\345\260\261\344\275\215\357\274\232", nullptr));
+        Label_8->setText(QCoreApplication::translate("MainWindow", " \344\275\234\344\270\232\345\256\214\346\210\220\357\274\232", nullptr));
+        lineEdit_88->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         tabWidget_3->setTabText(tabWidget_3->indexOf(tab_4), QCoreApplication::translate("MainWindow", "\346\234\211\344\272\272\346\216\250\345\234\237\346\234\272\345\217\202\346\225\260\346\230\276\347\244\272", nullptr));
         lb_line_3->setText(QString());
         tabWidget_pingdi->setTabText(tabWidget_pingdi->indexOf(tab_12), QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\275\234\344\270\232\350\275\250\350\277\271", nullptr));
@@ -2244,7 +2048,7 @@ public:
         btn_workdata_yalu->setText(QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\275\234\344\270\232\346\225\260\346\215\256", nullptr));
         tabWidget_7->setTabText(tabWidget_7->indexOf(tab_16), QCoreApplication::translate("MainWindow", "\346\234\211\344\272\272\345\216\213\350\267\257\346\234\272\345\217\202\346\225\260\346\230\276\347\244\272", nullptr));
         pbt_scraper_more->setText(QCoreApplication::translate("MainWindow", "\346\226\275\345\267\245\344\275\234\344\270\232\351\200\232\350\256\257\350\256\276\347\275\256", nullptr));
-        pBtn_delete_edge_15->setText(QCoreApplication::translate("MainWindow", "\350\275\246\350\275\275\350\256\241\347\256\227\345\271\263\345\217\260\350\277\236\346\216\245", nullptr));
+        pbt_connect_pc->setText(QCoreApplication::translate("MainWindow", "\350\275\246\350\275\275\350\256\241\347\256\227\345\271\263\345\217\260\350\277\236\346\216\245", nullptr));
         select_car->setItemText(0, QCoreApplication::translate("MainWindow", "\346\227\240\344\272\272\346\216\250\345\234\237\346\234\272", nullptr));
         select_car->setItemText(1, QCoreApplication::translate("MainWindow", "\346\234\211\344\272\272\346\216\250\345\234\237\346\234\272", nullptr));
         select_car->setItemText(2, QCoreApplication::translate("MainWindow", "\346\234\211\344\272\272\345\271\263\345\234\260\346\234\272", nullptr));
