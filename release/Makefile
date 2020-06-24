@@ -260,7 +260,11 @@ DIST          = /opt/fsl-imx-fb/4.1.15-2.0.1/sysroots/cortexa9hf-neon-poky-linux
 		../ros_ur_gui/manned_roller_can.h \
 		../ros_ur_gui/unmannedbulldozer_can.h \
 		../ros_ur_gui/mythead.h \
-		../ros_ur_gui/mechanicals.h ../ros_ur_gui/MyQLabel.cpp \
+		../ros_ur_gui/mechanicals.h \
+		../ros_ur_gui/mannedroller_http.h \
+		../ros_ur_gui/unmannedbulldozer_http.h \
+		../ros_ur_gui/mannedgrader_http.h \
+		../ros_ur_gui/mannedbulldozer_http.h ../ros_ur_gui/MyQLabel.cpp \
 		../ros_ur_gui/canmore_pingdi.cpp \
 		../ros_ur_gui/canmore_tuitu.cpp \
 		../ros_ur_gui/canmore_yalu.cpp \
@@ -566,7 +570,7 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../ros_ur_gui/MyQLabel.h ../ros_ur_gui/canmore_pingdi.h ../ros_ur_gui/canmore_tuitu.h ../ros_ur_gui/canmore_yalu.h ../ros_ur_gui/common.h ../ros_ur_gui/dialog_3dlaser_para_set.h ../ros_ur_gui/dialog_contol.h ../ros_ur_gui/dialog_mili_wave_para_set.h ../ros_ur_gui/dialog_ultrasonic_radar_para_set.h ../ros_ur_gui/ecu_more.h ../ros_ur_gui/mainwindow.h ../ros_ur_gui/scraper_more.h ../ros_ur_gui/workdata_pingdi.h ../ros_ur_gui/workdata_tuitu.h ../ros_ur_gui/workdata_yalu.h ../ros_ur_gui/workset.h ../ros_ur_gui/setup.h ../ros_ur_gui/manned_bulldozer_can.h ../ros_ur_gui/manned_grader_can.h ../ros_ur_gui/manned_roller_can.h ../ros_ur_gui/unmannedbulldozer_can.h ../ros_ur_gui/mythead.h ../ros_ur_gui/mechanicals.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../ros_ur_gui/MyQLabel.h ../ros_ur_gui/canmore_pingdi.h ../ros_ur_gui/canmore_tuitu.h ../ros_ur_gui/canmore_yalu.h ../ros_ur_gui/common.h ../ros_ur_gui/dialog_3dlaser_para_set.h ../ros_ur_gui/dialog_contol.h ../ros_ur_gui/dialog_mili_wave_para_set.h ../ros_ur_gui/dialog_ultrasonic_radar_para_set.h ../ros_ur_gui/ecu_more.h ../ros_ur_gui/mainwindow.h ../ros_ur_gui/scraper_more.h ../ros_ur_gui/workdata_pingdi.h ../ros_ur_gui/workdata_tuitu.h ../ros_ur_gui/workdata_yalu.h ../ros_ur_gui/workset.h ../ros_ur_gui/setup.h ../ros_ur_gui/manned_bulldozer_can.h ../ros_ur_gui/manned_grader_can.h ../ros_ur_gui/manned_roller_can.h ../ros_ur_gui/unmannedbulldozer_can.h ../ros_ur_gui/mythead.h ../ros_ur_gui/mechanicals.h ../ros_ur_gui/mannedroller_http.h ../ros_ur_gui/unmannedbulldozer_http.h ../ros_ur_gui/mannedgrader_http.h ../ros_ur_gui/mannedbulldozer_http.h $(DISTDIR)/
 	$(COPY_FILE) --parents ../ros_ur_gui/MyQLabel.cpp ../ros_ur_gui/canmore_pingdi.cpp ../ros_ur_gui/canmore_tuitu.cpp ../ros_ur_gui/canmore_yalu.cpp ../ros_ur_gui/common.cpp ../ros_ur_gui/dialog_3dlaser_para_set.cpp ../ros_ur_gui/dialog_contol.cpp ../ros_ur_gui/dialog_mili_wave_para_set.cpp ../ros_ur_gui/dialog_ultrasonic_radar_para_set.cpp ../ros_ur_gui/ecu_more.cpp ../ros_ur_gui/main.cpp ../ros_ur_gui/mainwindow.cpp ../ros_ur_gui/scraper_more.cpp ../ros_ur_gui/workdata_pingdi.cpp ../ros_ur_gui/workdata_tuitu.cpp ../ros_ur_gui/workdata_yalu.cpp ../ros_ur_gui/workset.cpp ../ros_ur_gui/mythead.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../ros_ur_gui/canmore_pingdi.ui ../ros_ur_gui/canmore_tuitu.ui ../ros_ur_gui/canmore_yalu.ui ../ros_ur_gui/dialog_3dlaser_para_set.ui ../ros_ur_gui/dialog_contol.ui ../ros_ur_gui/dialog_mili_wave_para_set.ui ../ros_ur_gui/dialog_ultrasonic_radar_para_set.ui ../ros_ur_gui/ecu_more.ui ../ros_ur_gui/mainwindow.ui ../ros_ur_gui/scraper_more.ui ../ros_ur_gui/workdata_pingdi.ui ../ros_ur_gui/workdata_tuitu.ui ../ros_ur_gui/workdata_yalu.ui ../ros_ur_gui/workset.ui $(DISTDIR)/
 
@@ -775,6 +779,7 @@ main.o: ../ros_ur_gui/main.cpp ../ros_ur_gui/mainwindow.h \
 		../ros_ur_gui/manned_bulldozer_can.h \
 		../ros_ur_gui/manned_grader_can.h \
 		../ros_ur_gui/manned_roller_can.h \
+		../ros_ur_gui/mannedroller_http.h \
 		../ros_ur_gui/mechanicals.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../ros_ur_gui/main.cpp
 
@@ -801,6 +806,7 @@ mainwindow.o: ../ros_ur_gui/mainwindow.cpp ../ros_ur_gui/mainwindow.h \
 		../ros_ur_gui/manned_bulldozer_can.h \
 		../ros_ur_gui/manned_grader_can.h \
 		../ros_ur_gui/manned_roller_can.h \
+		../ros_ur_gui/mannedroller_http.h \
 		../ros_ur_gui/mechanicals.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../ros_ur_gui/mainwindow.cpp
 
@@ -831,6 +837,7 @@ mythead.o: ../ros_ur_gui/mythead.cpp ../ros_ur_gui/mythead.h \
 		../ros_ur_gui/manned_bulldozer_can.h \
 		../ros_ur_gui/manned_grader_can.h \
 		../ros_ur_gui/manned_roller_can.h \
+		../ros_ur_gui/mannedroller_http.h \
 		../ros_ur_gui/mechanicals.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mythead.o ../ros_ur_gui/mythead.cpp
 

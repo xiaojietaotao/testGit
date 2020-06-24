@@ -69,7 +69,11 @@ HEADERS += \
     manned_roller_can.h \
     unmannedbulldozer_can.h \
     mythead.h \
-    mechanicals.h
+    mechanicals.h \
+    mannedroller_http.h \
+    unmannedbulldozer_http.h \
+    mannedgrader_http.h \
+    mannedbulldozer_http.h
 
 FORMS += \
         canmore_pingdi.ui \

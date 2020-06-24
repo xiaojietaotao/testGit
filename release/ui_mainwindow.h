@@ -115,6 +115,7 @@ public:
     QWidget *tab_8;
     QLabel *show_txt1;
     QRadioButton *radioButton;
+    QWidget *tab_2;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout_2;
     QPushButton *pbt_ultrasonic_radar;
@@ -848,6 +849,9 @@ public:
         radioButton->setGeometry(QRect(290, 410, 76, 16));
         radioButton->setFont(font);
         tabWidget_2->addTab(tab_8, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QStringLiteral("tab_2"));
+        tabWidget_2->addTab(tab_2, QString());
         gridLayoutWidget = new QWidget(tab);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
         gridLayoutWidget->setGeometry(QRect(650, 0, 121, 480));
@@ -1209,7 +1213,7 @@ public:
         tabWidget_tuitu->addTab(tab_10, QString());
         layoutWidget_2 = new QWidget(tab_4);
         layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(0, 250, 261, 35));
+        layoutWidget_2->setGeometry(QRect(0, 250, 292, 35));
         layoutWidget_2->setFont(font);
         horizontalLayout_252 = new QHBoxLayout(layoutWidget_2);
         horizontalLayout_252->setSpacing(6);
@@ -1938,17 +1942,17 @@ public:
         initial_page->setObjectName(QStringLiteral("initial_page"));
         pbt_scraper_more = new QPushButton(initial_page);
         pbt_scraper_more->setObjectName(QStringLiteral("pbt_scraper_more"));
-        pbt_scraper_more->setGeometry(QRect(260, 130, 251, 23));
+        pbt_scraper_more->setGeometry(QRect(260, 130, 251, 31));
         pbt_scraper_more->setFont(font4);
         pbt_scraper_more->setStyleSheet(QStringLiteral("background-color: rgb(37, 162, 242);"));
         pBtn_delete_edge_15 = new QPushButton(initial_page);
         pBtn_delete_edge_15->setObjectName(QStringLiteral("pBtn_delete_edge_15"));
-        pBtn_delete_edge_15->setGeometry(QRect(260, 190, 251, 23));
+        pBtn_delete_edge_15->setGeometry(QRect(260, 182, 251, 31));
         pBtn_delete_edge_15->setFont(font4);
         pBtn_delete_edge_15->setStyleSheet(QStringLiteral("background-color: rgb(37, 162, 242);"));
         select_car = new QComboBox(initial_page);
         select_car->setObjectName(QStringLiteral("select_car"));
-        select_car->setGeometry(QRect(390, 40, 121, 22));
+        select_car->setGeometry(QRect(390, 40, 121, 31));
         lbl_vertex_number_43 = new QLabel(initial_page);
         lbl_vertex_number_43->setObjectName(QStringLiteral("lbl_vertex_number_43"));
         lbl_vertex_number_43->setGeometry(QRect(260, 0, 251, 31));
@@ -1961,11 +1965,11 @@ public:
         lbl_vertex_number_43->setAlignment(Qt::AlignCenter);
         pbt_initial_ack = new QPushButton(initial_page);
         pbt_initial_ack->setObjectName(QStringLiteral("pbt_initial_ack"));
-        pbt_initial_ack->setGeometry(QRect(320, 230, 121, 23));
+        pbt_initial_ack->setGeometry(QRect(320, 230, 121, 31));
         pbt_initial_ack->setStyleSheet(QStringLiteral("background-color: rgb(85, 170, 127);"));
         lbl_vertex_number_47 = new QLabel(initial_page);
         lbl_vertex_number_47->setObjectName(QStringLiteral("lbl_vertex_number_47"));
-        lbl_vertex_number_47->setGeometry(QRect(260, 40, 121, 21));
+        lbl_vertex_number_47->setGeometry(QRect(260, 40, 121, 31));
         QFont font7;
         font7.setPointSize(11);
         font7.setBold(true);
@@ -1999,10 +2003,10 @@ public:
         lb_car_wajue->setGeometry(QRect(620, 300, 161, 141));
         select_baud_rate = new QComboBox(initial_page);
         select_baud_rate->setObjectName(QStringLiteral("select_baud_rate"));
-        select_baud_rate->setGeometry(QRect(390, 80, 121, 22));
+        select_baud_rate->setGeometry(QRect(390, 80, 121, 31));
         label_653 = new QLabel(initial_page);
         label_653->setObjectName(QStringLiteral("label_653"));
-        label_653->setGeometry(QRect(270, 80, 91, 20));
+        label_653->setGeometry(QRect(270, 80, 91, 31));
         label_653->setFont(font7);
         label_653->setAlignment(Qt::AlignCenter);
         stackedWidget->addWidget(initial_page);
@@ -2032,9 +2036,9 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(4);
+        stackedWidget->setCurrentIndex(0);
         tabWidget->setCurrentIndex(0);
-        tabWidget_2->setCurrentIndex(1);
+        tabWidget_2->setCurrentIndex(2);
         tabWidget_3->setCurrentIndex(0);
         tabWidget_tuitu->setCurrentIndex(1);
         tabWidget_5->setCurrentIndex(0);
@@ -2112,6 +2116,7 @@ public:
         show_txt1->setText(QString());
         radioButton->setText(QApplication::translate("MainWindow", "  \346\230\276\347\244\272\351\232\234\347\242\215\350\214\203\345\233\264", 0));
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QApplication::translate("MainWindow", "\346\226\275\345\267\245\344\273\273\345\212\241\346\217\217\350\277\260", 0));
+        tabWidget_2->setTabText(tabWidget_2->indexOf(tab_2), QApplication::translate("MainWindow", "\346\226\275\345\267\245\345\234\272\346\231\257\346\204\237\347\237\245", 0));
         pbt_ultrasonic_radar->setText(QApplication::translate("MainWindow", "\350\266\205\345\243\260\346\263\242\351\233\267\350\276\276>>", 0));
         label_35->setText(QApplication::translate("MainWindow", "\345\220\216\351\233\267\350\276\276\357\274\232", 0));
         label_37->setText(QApplication::translate("MainWindow", "\345\267\246\351\233\267\350\276\276\357\274\232", 0));

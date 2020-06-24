@@ -12,6 +12,11 @@ typedef struct
 	double pointYBac[300];
 }mbd_Path;
 
+typedef struct
+{
+	char task[2000];
+}mbd_task;
+
 void mbd_http_parse_param_info(void) ;
 void mbd_http_parse_walking_info(void);
 void mbd_http_parse_job_info(void);

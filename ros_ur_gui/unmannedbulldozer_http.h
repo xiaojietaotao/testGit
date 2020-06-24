@@ -13,6 +13,11 @@ typedef struct
 	double pointYBac[300];
 }unmannedBulldozerPath;
 
+typedef struct 
+{
+	char task[2000];
+}umbd_task;
+
 void umbd_http_parse_param_info(void) ;
 void umbd_http_parse_walking_info(void);
 void umbd_http_parse_job_info(void);
