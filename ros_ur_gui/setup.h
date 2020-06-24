@@ -4,6 +4,7 @@
 #include "manned_bulldozer_can.h"
 #include "manned_grader_can.h"
 #include "manned_roller_can.h"
+#include "mannedroller_http.h"
 #include  "mechanicals.h"
 
 //无人推土机CAN数据共享
@@ -41,6 +42,7 @@ extern mrl_system_voltage    mrl_msg_system_voltage;
 extern mrl_engine_oil_pressure    mrl_msg_engine_oil_pressure;
 extern mrl_engine_coolant_temperature    mrl_msg_engine_coolant_temperature;
 extern mrl_fuel_consumption    mrl_msg_fuel_consumption;
+extern mrl_task task;
 
 //有人/无人运行数值
 extern Mechanicals machine;

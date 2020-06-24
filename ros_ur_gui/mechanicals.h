@@ -28,7 +28,10 @@ typedef int (*pfunc_can_reader) (int, unsigned int*, unsigned char*, int);
 typedef int (*pfunc_http_send_param) (void);
 typedef int (*pfunc_http_send_walking_request) (void);
 typedef int (*pfunc_http_send_job_request) (void);
-typedef void (*pfunc_http_walkingmsg_to_json) (void);
+
+typedef void (*pfunc_http_parsing_parammsg) (void);
+typedef void (*pfunc_http_parsing_walkingmsg) (void);
+typedef void (*pfunc_http_parsing_taskmsg) (void);
 
 typedef struct
 {
@@ -45,7 +48,10 @@ typedef struct
 	pfunc_http_send_param http_send_param;
 	pfunc_http_send_walking_request http_send_walking_request;
 	pfunc_http_send_job_request http_send_job_request;
-	pfunc_http_walkingmsg_to_json http_walkingmsg_to_json;
+	
+	pfunc_http_parsing_parammsg http_parsing_parammsg;
+	pfunc_http_parsing_walkingmsg http_parsing_walkingmsg;
+	pfunc_http_parsing_taskmsg http_parsing_taskmsg;
 }Mechanicals;
 
 void init_mechanicals_func(Mechanicals *pmechanicals);
